@@ -7,6 +7,7 @@
   * [Handling Private Packages With Satis](articles/handling-private-packages-with-satis.md)
   * [Http Basic Authentication](articles/http-basic-authentication.md)
   * [Plugins](articles/plugins.md)
+  * [Repository Priorities](articles/repository-priorities.md)
   * [Scripts](articles/scripts.md)
   * [Troubleshooting](articles/troubleshooting.md)
   * [Vendor Binaries](articles/vendor-binaries.md)

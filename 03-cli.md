@@ -149,6 +149,7 @@ php composer.phar update "vendor/*"
 * **--dry-run:** Simulate the command without actually doing anything.
 * **--dev:** Install packages listed in `require-dev` (this is the default behavior).
 * **--no-dev:** Skip installing packages listed in `require-dev`. The autoloader generation skips the `autoload-dev` rules.
+* **--no-install:** Does not run the install step after updating the composer.lock file.
 * **--lock:** Only updates the lock file hash to suppress warning about the
   lock file being out of date.
 * **--no-autoloader:** Skips autoloader generation.
@@ -201,7 +202,8 @@ If you do not specify a package, composer will prompt you to search for a packag
 * **--prefer-dist:** Install packages from `dist` when available.
 * **--no-progress:** Removes the progress display that can mess with some
   terminals or scripts which don't handle backspace characters.
-* **--no-update:** Disables the automatic update of the dependencies.
+* **--no-update:** Disables the automatic update of the dependencies (implies --no-install).
+* **--no-install:** Does not run the install step after updating the composer.lock file.
 * **--no-scripts:** Skips execution of scripts defined in `composer.json`.
 * **--update-no-dev:** Run the dependency update with the `--no-dev` option.
 * **--update-with-dependencies:** Also update dependencies of the newly required packages, except those that are root requirements.
@@ -237,7 +239,8 @@ uninstalled.
 * **--dry-run:** Simulate the command without actually doing anything.
 * **--no-progress:** Removes the progress display that can mess with some
   terminals or scripts which don't handle backspace characters.
-* **--no-update:** Disables the automatic update of the dependencies.
+* **--no-update:** Disables the automatic update of the dependencies (implies --no-install).
+* **--no-install:** Does not run the install step after updating the composer.lock file.
 * **--no-scripts:** Skips execution of scripts defined in `composer.json`.
 * **--update-no-dev:** Run the dependency update with the --no-dev option.
 * **--update-with-dependencies:** Also update dependencies of the removed packages.
@@ -605,6 +608,8 @@ See the [Config](06-config.md) chapter for valid configuration options.
   that this cannot be used in conjunction with the `--global` option.
 * **--absolute:** Returns absolute paths when fetching *-dir config values
   instead of relative.
+* **--json:** JSON decode the setting value, to be used with `extra.*` keys.
+* **--merge:** Merge the setting value with the current value, to be used with `extra.*` keys in combination with `--json`.
 
 ### Modifying Repositories
 
@@ -632,6 +637,13 @@ php composer.phar config extra.foo.bar value
 
 The dots indicate array nesting, a max depth of 3 levels is allowed though. The above
 would set `"extra": { "foo": { "bar": "value" } }`.
+
+If you have a complex value to add/modify, you can use the `--json` and `--merge` flags
+to edit extra fields as json:
+
+```sh
+php composer.phar config --json extra.foo.bar '{"baz": true, "qux": []}'
+```
 
 ## create-project
 

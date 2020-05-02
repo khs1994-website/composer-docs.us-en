@@ -30,4 +30,5 @@
 * [04 Schema](04-schema.md)
 * [05 Repositories](05-repositories.md)
 * [06 Config](06-config.md)
-* [07 Community](07-community.md)
+* [07 Runtime](07-runtime.md)
+* [08 Community](08-community.md)

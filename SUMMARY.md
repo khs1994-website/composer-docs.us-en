@@ -2,10 +2,10 @@
 
 - Articles
   * [Aliases](articles/aliases.md)
+  * [Authentication For Private Packages](articles/authentication-for-private-packages.md)
   * [Autoloader Optimization](articles/autoloader-optimization.md)
   * [Custom Installers](articles/custom-installers.md)
-  * [Handling Private Packages With Satis](articles/handling-private-packages-with-satis.md)
-  * [Http Basic Authentication](articles/http-basic-authentication.md)
+  * [Handling Private Packages](articles/handling-private-packages.md)
   * [Plugins](articles/plugins.md)
   * [Repository Priorities](articles/repository-priorities.md)
   * [Scripts](articles/scripts.md)

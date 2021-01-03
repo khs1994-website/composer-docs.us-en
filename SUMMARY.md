@@ -8,6 +8,7 @@
   * [Handling Private Packages](articles/handling-private-packages.md)
   * [Plugins](articles/plugins.md)
   * [Repository Priorities](articles/repository-priorities.md)
+  * [Resolving Merge Conflicts](articles/resolving-merge-conflicts.md)
   * [Scripts](articles/scripts.md)
   * [Troubleshooting](articles/troubleshooting.md)
   * [Vendor Binaries](articles/vendor-binaries.md)

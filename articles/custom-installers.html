@@ -1,0 +1,855 @@
+
+<!DOCTYPE HTML>
+<html lang="us-en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Custom Installers · Composer 英文文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="handling-private-packages.html" />
+    
+    
+    <link rel="prev" href="autoloader-optimization.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://docs.khs1994.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Articles
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="aliases.html">
+            
+                <a href="aliases.html">
+            
+                    
+                    Aliases
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="authentication-for-private-packages.html">
+            
+                <a href="authentication-for-private-packages.html">
+            
+                    
+                    Authentication For Private Packages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="autoloader-optimization.html">
+            
+                <a href="autoloader-optimization.html">
+            
+                    
+                    Autoloader Optimization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.4" data-path="custom-installers.html">
+            
+                <a href="custom-installers.html">
+            
+                    
+                    Custom Installers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="handling-private-packages.html">
+            
+                <a href="handling-private-packages.html">
+            
+                    
+                    Handling Private Packages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="plugins.html">
+            
+                <a href="plugins.html">
+            
+                    
+                    Plugins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="repository-priorities.html">
+            
+                <a href="repository-priorities.html">
+            
+                    
+                    Repository Priorities
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="resolving-merge-conflicts.html">
+            
+                <a href="resolving-merge-conflicts.html">
+            
+                    
+                    Resolving Merge Conflicts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="scripts.html">
+            
+                <a href="scripts.html">
+            
+                    
+                    Scripts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="troubleshooting.html">
+            
+                <a href="troubleshooting.html">
+            
+                    
+                    Troubleshooting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="vendor-binaries.html">
+            
+                <a href="vendor-binaries.html">
+            
+                    
+                    Vendor Binaries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="versions.html">
+            
+                <a href="versions.html">
+            
+                    
+                    Versions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Dev
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../dev/DefaultPolicy.html">
+            
+                <a href="../dev/DefaultPolicy.html">
+            
+                    
+                    Default Policy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Faqs
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../faqs/how-do-i-install-a-package-to-a-custom-path-for-my-framework.html">
+            
+                <a href="../faqs/how-do-i-install-a-package-to-a-custom-path-for-my-framework.html">
+            
+                    
+                    How Do I Install A Package To A Custom Path For My Framework
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../faqs/how-to-install-composer-programmatically.html">
+            
+                <a href="../faqs/how-to-install-composer-programmatically.html">
+            
+                    
+                    How To Install Composer Programmatically
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../faqs/how-to-install-untrusted-packages-safely.html">
+            
+                <a href="../faqs/how-to-install-untrusted-packages-safely.html">
+            
+                    
+                    How To Install Untrusted Packages Safely
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../faqs/should-i-commit-the-dependencies-in-my-vendor-directory.html">
+            
+                <a href="../faqs/should-i-commit-the-dependencies-in-my-vendor-directory.html">
+            
+                    
+                    Should I Commit The Dependencies In My Vendor Directory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../faqs/which-version-numbering-system-does-composer-itself-use.html">
+            
+                <a href="../faqs/which-version-numbering-system-does-composer-itself-use.html">
+            
+                    
+                    Which Version Numbering System Does Composer Itself Use
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../faqs/why-are-unbound-version-constraints-a-bad-idea.html">
+            
+                <a href="../faqs/why-are-unbound-version-constraints-a-bad-idea.html">
+            
+                    
+                    Why Are Unbound Version Constraints A Bad Idea
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../faqs/why-are-version-constraints-combining-comparisons-and-wildcards-a-bad-idea.html">
+            
+                <a href="../faqs/why-are-version-constraints-combining-comparisons-and-wildcards-a-bad-idea.html">
+            
+                    
+                    Why Are Version Constraints Combining Comparisons And Wildcards A Bad Idea
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../faqs/why-can't-composer-load-repositories-recursively.html">
+            
+                <a href="../faqs/why-can't-composer-load-repositories-recursively.html">
+            
+                    
+                    Why Can T Composer Load Repositories Recursively
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../fixtures/fixtures.html">
+            
+                <a href="../fixtures/fixtures.html">
+            
+                    
+                    Fixtures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../01-basic-usage.html">
+            
+                <a href="../01-basic-usage.html">
+            
+                    
+                    01 Basic Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../02-libraries.html">
+            
+                <a href="../02-libraries.html">
+            
+                    
+                    02 Libraries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../03-cli.html">
+            
+                <a href="../03-cli.html">
+            
+                    
+                    03 Cli
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../04-schema.html">
+            
+                <a href="../04-schema.html">
+            
+                    
+                    04 Schema
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../05-repositories.html">
+            
+                <a href="../05-repositories.html">
+            
+                    
+                    05 Repositories
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../06-config.html">
+            
+                <a href="../06-config.html">
+            
+                    
+                    06 Config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../07-runtime.html">
+            
+                <a href="../07-runtime.html">
+            
+                    
+                    07 Runtime
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../08-community.html">
+            
+                <a href="../08-community.html">
+            
+                    
+                    08 Community
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Custom Installers</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <!--
+    tagline: Modify the way certain types of packages are installed
+-->
+<h1 id="setting-up-and-using-custom-installers">Setting up and using custom installers</h1>
+<h2 id="synopsis">Synopsis</h2>
+<p>At times, it may be necessary for a package to require additional actions during
+installation, such as installing packages outside of the default <code>vendor</code>
+library.</p>
+<p>In these cases you could consider creating a Custom Installer to handle your
+specific logic.</p>
+<h2 id="calling-a-custom-installer">Calling a Custom Installer</h2>
+<p>Suppose that your project already has a Custom Installer for specific modules
+then invoking that installer is a matter of defining the correct <a href="../04-schema.html#type">type</a> in
+your package file.</p>
+<blockquote>
+<p><em>See the next chapter for an instruction how to create Custom Installers.</em></p>
+</blockquote>
+<p>Every Custom Installer defines which <a href="../04-schema.html#type">type</a> string it will recognize. Once
+recognized it will completely override the default installer and only apply its
+own logic.</p>
+<p>An example use-case would be:</p>
+<blockquote>
+<p>phpDocumentor features Templates that need to be installed outside of the
+default /vendor folder structure. As such they have chosen to adopt the
+<code>phpdocumentor-template</code> <a href="../04-schema.html#type">type</a> and create a plugin providing the Custom
+Installer to send these templates to the correct folder.</p>
+</blockquote>
+<p>An example composer.json of such a template package would be:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;phpdocumentor/template-responsive&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;phpdocumentor-template&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;require&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;phpdocumentor/template-installer-plugin&quot;</span><span class="token operator">:</span> <span class="token string">&quot;*&quot;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<blockquote>
+<p><strong>IMPORTANT</strong>: to make sure that the template installer is present at the
+time the template package is installed, template packages should require
+the plugin package.</p>
+</blockquote>
+<h2 id="creating-an-installer">Creating an Installer</h2>
+<p>A Custom Installer is defined as a class that implements the
+<a href="https://github.com/composer/composer/blob/master/src/Composer/Installer/InstallerInterface.php" target="_blank"><code>Composer\Installer\InstallerInterface</code></a> and is usually distributed in a
+Composer Plugin.</p>
+<p>A basic Installer Plugin would thus compose of three files:</p>
+<ol>
+<li>the package file: composer.json</li>
+<li>The Plugin class, e.g.: <code>My\Project\Composer\Plugin.php</code>, containing a class that implements <code>Composer\Plugin\PluginInterface</code>.</li>
+<li>The Installer class, e.g.: <code>My\Project\Composer\Installer.php</code>, containing a class that implements <code>Composer\Installer\InstallerInterface</code>.</li>
+</ol>
+<h3 id="composerjson">composer.json</h3>
+<p>The package file is the same as any other package file but with the following
+requirements:</p>
+<ol>
+<li>the <a href="../04-schema.html#type">type</a> attribute must be <code>composer-plugin</code>.</li>
+<li>the <a href="../04-schema.html#extra">extra</a> attribute must contain an element <code>class</code> defining the
+class name of the plugin (including namespace). If a package contains
+multiple plugins this can be array of class names.</li>
+</ol>
+<p>Example:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;phpdocumentor/template-installer-plugin&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;composer-plugin&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;license&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MIT&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;autoload&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;psr-0&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token property">&quot;phpDocumentor\\Composer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;src/&quot;</span><span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;extra&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;class&quot;</span><span class="token operator">:</span> <span class="token string">&quot;phpDocumentor\\Composer\\TemplateInstallerPlugin&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;require&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;composer-plugin-api&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^1.0&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;require-dev&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;composer/composer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^1.3&quot;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>The example above has Composer itself in its require-dev, which allows you to use
+the Composer classes in your test suite for example.</p>
+<h3 id="the-plugin-class">The Plugin class</h3>
+<p>The class defining the Composer plugin must implement the
+<a href="https://github.com/composer/composer/blob/master/src/Composer/Plugin/PluginInterface.php" target="_blank"><code>Composer\Plugin\PluginInterface</code></a>. It can then register the Custom
+Installer in its <code>activate()</code> method.</p>
+<p>The class may be placed in any location and have any name, as long as it is
+autoloadable and matches the <code>extra.class</code> element in the package definition.</p>
+<p>Example:</p>
+<pre class="language-"><code class="lang-php"><span class="token delimiter important">&lt;?php</span>
+
+<span class="token keyword">namespace</span> <span class="token package">phpDocumentor<span class="token punctuation">\</span>Composer</span><span class="token punctuation">;</span>
+
+<span class="token keyword">use</span> <span class="token package">Composer<span class="token punctuation">\</span>Composer</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Composer<span class="token punctuation">\</span>IO<span class="token punctuation">\</span>IOInterface</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Composer<span class="token punctuation">\</span>Plugin<span class="token punctuation">\</span>PluginInterface</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">TemplateInstallerPlugin</span> <span class="token keyword">implements</span> <span class="token class-name">PluginInterface</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">activate</span><span class="token punctuation">(</span>Composer <span class="token variable">$composer</span><span class="token punctuation">,</span> IOInterface <span class="token variable">$io</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token variable">$installer</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">TemplateInstaller</span><span class="token punctuation">(</span><span class="token variable">$io</span><span class="token punctuation">,</span> <span class="token variable">$composer</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token variable">$composer</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">getInstallationManager</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">addInstaller</span><span class="token punctuation">(</span><span class="token variable">$installer</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="the-custom-installer-class">The Custom Installer class</h3>
+<p>The class that executes the custom installation should implement the
+<a href="https://github.com/composer/composer/blob/master/src/Composer/Installer/InstallerInterface.php" target="_blank"><code>Composer\Installer\InstallerInterface</code></a> (or extend another installer that
+implements that interface). It defines the <a href="../04-schema.html#type">type</a> string as it will be
+recognized by packages that will use this installer in the <code>supports()</code> method.</p>
+<blockquote>
+<p><strong>NOTE</strong>: <em>choose your <a href="../04-schema.html#type">type</a> name carefully, it is recommended to follow
+the format: <code>vendor-type</code></em>. For example: <code>phpdocumentor-template</code>.</p>
+</blockquote>
+<p>The InstallerInterface class defines the following methods (please see the
+source for the exact signature):</p>
+<ul>
+<li><strong>supports()</strong>, here you test whether the passed <a href="../04-schema.html#type">type</a> matches the name
+that you declared for this installer (see the example).</li>
+<li><strong>isInstalled()</strong>, determines whether a supported package is installed or not.</li>
+<li><strong>install()</strong>, here you can determine the actions that need to be executed
+upon installation.</li>
+<li><strong>update()</strong>, here you define the behavior that is required when Composer is
+invoked with the update argument.</li>
+<li><strong>uninstall()</strong>, here you can determine the actions that need to be executed
+when the package needs to be removed.</li>
+<li><strong>getInstallPath()</strong>, this method should return the location where the
+package is to be installed, <em>relative from the location of composer.json.</em>
+The path <em>must not end with a slash.</em></li>
+</ul>
+<p>Example:</p>
+<pre class="language-"><code class="lang-php"><span class="token delimiter important">&lt;?php</span>
+
+<span class="token keyword">namespace</span> <span class="token package">phpDocumentor<span class="token punctuation">\</span>Composer</span><span class="token punctuation">;</span>
+
+<span class="token keyword">use</span> <span class="token package">Composer<span class="token punctuation">\</span>Package<span class="token punctuation">\</span>PackageInterface</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Composer<span class="token punctuation">\</span>Installer<span class="token punctuation">\</span>LibraryInstaller</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">TemplateInstaller</span> <span class="token keyword">extends</span> <span class="token class-name">LibraryInstaller</span>
+<span class="token punctuation">{</span>
+    <span class="token comment">/**
+     * {@inheritDoc}
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">getInstallPath</span><span class="token punctuation">(</span>PackageInterface <span class="token variable">$package</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token variable">$prefix</span> <span class="token operator">=</span> <span class="token function">substr</span><span class="token punctuation">(</span><span class="token variable">$package</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">getPrettyName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">23</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;phpdocumentor/template-&apos;</span> <span class="token operator">!==</span> <span class="token variable">$prefix</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name"><span class="token punctuation">\</span>InvalidArgumentException</span><span class="token punctuation">(</span>
+                <span class="token single-quoted-string string">&apos;Unable to install template, phpdocumentor templates &apos;</span>
+                <span class="token punctuation">.</span><span class="token single-quoted-string string">&apos;should always start their package name with &apos;</span>
+                <span class="token punctuation">.</span><span class="token single-quoted-string string">&apos;&quot;phpdocumentor/template-&quot;&apos;</span>
+            <span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">return</span> <span class="token single-quoted-string string">&apos;data/templates/&apos;</span><span class="token punctuation">.</span><span class="token function">substr</span><span class="token punctuation">(</span><span class="token variable">$package</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">getPrettyName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">23</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">/**
+     * {@inheritDoc}
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">supports</span><span class="token punctuation">(</span><span class="token variable">$packageType</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token single-quoted-string string">&apos;phpdocumentor-template&apos;</span> <span class="token operator">===</span> <span class="token variable">$packageType</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>The example demonstrates that it is possible to extend the
+<a href="https://github.com/composer/composer/blob/master/src/Composer/Installer/LibraryInstaller.php" target="_blank"><code>Composer\Installer\LibraryInstaller</code></a> class to strip a prefix
+(<code>phpdocumentor/template-</code>) and use the remaining part to assemble a completely
+different installation path.</p>
+<blockquote>
+<p><em>Instead of being installed in <code>/vendor</code> any package installed using this
+Installer will be put in the <code>/data/templates/<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stripped</span> <span class="token attr-name">name</span><span class="token punctuation">&gt;</span></span></code> folder.</em></p>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="autoloader-optimization.html" class="navigation navigation-prev " aria-label="Previous page: Autoloader Optimization">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="handling-private-packages.html" class="navigation navigation-next " aria-label="Next page: Handling Private Packages">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Custom Installers","level":"1.2.4","depth":2,"next":{"title":"Handling Private Packages","level":"1.2.5","depth":2,"path":"articles/handling-private-packages.md","ref":"articles/handling-private-packages.md","articles":[]},"previous":{"title":"Autoloader Optimization","level":"1.2.3","depth":2,"path":"articles/autoloader-optimization.md","ref":"articles/autoloader-optimization.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-highlight","-livereload","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Composer 英文文档","language":"us-en","links":{"sidebar":{"Home":"https://docs.khs1994.com"}},"gitbook":"*"},"file":{"path":"articles/custom-installers.md","mtime":"2021-02-26T00:11:44.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-26T00:12:20.506Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

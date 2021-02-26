@@ -1,0 +1,1493 @@
+
+<!DOCTYPE HTML>
+<html lang="us-en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>03 Cli · Composer 英文文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="04-schema.html" />
+    
+    
+    <link rel="prev" href="02-libraries.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://docs.khs1994.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Articles
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="articles/aliases.html">
+            
+                <a href="articles/aliases.html">
+            
+                    
+                    Aliases
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="articles/authentication-for-private-packages.html">
+            
+                <a href="articles/authentication-for-private-packages.html">
+            
+                    
+                    Authentication For Private Packages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="articles/autoloader-optimization.html">
+            
+                <a href="articles/autoloader-optimization.html">
+            
+                    
+                    Autoloader Optimization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="articles/custom-installers.html">
+            
+                <a href="articles/custom-installers.html">
+            
+                    
+                    Custom Installers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="articles/handling-private-packages.html">
+            
+                <a href="articles/handling-private-packages.html">
+            
+                    
+                    Handling Private Packages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="articles/plugins.html">
+            
+                <a href="articles/plugins.html">
+            
+                    
+                    Plugins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="articles/repository-priorities.html">
+            
+                <a href="articles/repository-priorities.html">
+            
+                    
+                    Repository Priorities
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="articles/resolving-merge-conflicts.html">
+            
+                <a href="articles/resolving-merge-conflicts.html">
+            
+                    
+                    Resolving Merge Conflicts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="articles/scripts.html">
+            
+                <a href="articles/scripts.html">
+            
+                    
+                    Scripts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="articles/troubleshooting.html">
+            
+                <a href="articles/troubleshooting.html">
+            
+                    
+                    Troubleshooting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="articles/vendor-binaries.html">
+            
+                <a href="articles/vendor-binaries.html">
+            
+                    
+                    Vendor Binaries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="articles/versions.html">
+            
+                <a href="articles/versions.html">
+            
+                    
+                    Versions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Dev
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="dev/DefaultPolicy.html">
+            
+                <a href="dev/DefaultPolicy.html">
+            
+                    
+                    Default Policy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Faqs
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="faqs/how-do-i-install-a-package-to-a-custom-path-for-my-framework.html">
+            
+                <a href="faqs/how-do-i-install-a-package-to-a-custom-path-for-my-framework.html">
+            
+                    
+                    How Do I Install A Package To A Custom Path For My Framework
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="faqs/how-to-install-composer-programmatically.html">
+            
+                <a href="faqs/how-to-install-composer-programmatically.html">
+            
+                    
+                    How To Install Composer Programmatically
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="faqs/how-to-install-untrusted-packages-safely.html">
+            
+                <a href="faqs/how-to-install-untrusted-packages-safely.html">
+            
+                    
+                    How To Install Untrusted Packages Safely
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="faqs/should-i-commit-the-dependencies-in-my-vendor-directory.html">
+            
+                <a href="faqs/should-i-commit-the-dependencies-in-my-vendor-directory.html">
+            
+                    
+                    Should I Commit The Dependencies In My Vendor Directory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="faqs/which-version-numbering-system-does-composer-itself-use.html">
+            
+                <a href="faqs/which-version-numbering-system-does-composer-itself-use.html">
+            
+                    
+                    Which Version Numbering System Does Composer Itself Use
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="faqs/why-are-unbound-version-constraints-a-bad-idea.html">
+            
+                <a href="faqs/why-are-unbound-version-constraints-a-bad-idea.html">
+            
+                    
+                    Why Are Unbound Version Constraints A Bad Idea
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="faqs/why-are-version-constraints-combining-comparisons-and-wildcards-a-bad-idea.html">
+            
+                <a href="faqs/why-are-version-constraints-combining-comparisons-and-wildcards-a-bad-idea.html">
+            
+                    
+                    Why Are Version Constraints Combining Comparisons And Wildcards A Bad Idea
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="faqs/why-can't-composer-load-repositories-recursively.html">
+            
+                <a href="faqs/why-can't-composer-load-repositories-recursively.html">
+            
+                    
+                    Why Can T Composer Load Repositories Recursively
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="fixtures/fixtures.html">
+            
+                <a href="fixtures/fixtures.html">
+            
+                    
+                    Fixtures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="01-basic-usage.html">
+            
+                <a href="01-basic-usage.html">
+            
+                    
+                    01 Basic Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="02-libraries.html">
+            
+                <a href="02-libraries.html">
+            
+                    
+                    02 Libraries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8" data-path="03-cli.html">
+            
+                <a href="03-cli.html">
+            
+                    
+                    03 Cli
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="04-schema.html">
+            
+                <a href="04-schema.html">
+            
+                    
+                    04 Schema
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="05-repositories.html">
+            
+                <a href="05-repositories.html">
+            
+                    
+                    05 Repositories
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="06-config.html">
+            
+                <a href="06-config.html">
+            
+                    
+                    06 Config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="07-runtime.html">
+            
+                <a href="07-runtime.html">
+            
+                    
+                    07 Runtime
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="08-community.html">
+            
+                <a href="08-community.html">
+            
+                    
+                    08 Community
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >03 Cli</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="command-line-interface--commands">Command-line interface / Commands</h1>
+<p>You&apos;ve already learned how to use the command-line interface to do some
+things. This chapter documents all the available commands.</p>
+<p>To get help from the command-line, call <code>composer</code> or <code>composer list</code>
+to see the complete list of commands, then <code>--help</code> combined with any of those
+can give you more information.</p>
+<p>As Composer uses <a href="https://github.com/symfony/console" target="_blank">symfony/console</a> you can call commands by short name if it&apos;s not ambiguous.</p>
+<pre class="language-"><code class="lang-sh">composer dump
+</code></pre>
+<p>calls <code>composer dump-autoload</code>.</p>
+<h2 id="global-options">Global Options</h2>
+<p>The following options are available with every command:</p>
+<ul>
+<li><strong>--verbose (-v):</strong> Increase verbosity of messages.</li>
+<li><strong>--help (-h):</strong> Display help information.</li>
+<li><strong>--quiet (-q):</strong> Do not output any message.</li>
+<li><strong>--no-interaction (-n):</strong> Do not ask any interactive question.</li>
+<li><strong>--no-plugins:</strong> Disables plugins.</li>
+<li><strong>--no-cache:</strong> Disables the use of the cache directory. Same as setting the COMPOSER_CACHE_DIR
+env var to /dev/null (or NUL on Windows).</li>
+<li><strong>--working-dir (-d):</strong> If specified, use the given directory as working directory.</li>
+<li><strong>--profile:</strong> Display timing and memory usage information</li>
+<li><strong>--ansi:</strong> Force ANSI output.</li>
+<li><strong>--no-ansi:</strong> Disable ANSI output.</li>
+<li><strong>--version (-V):</strong> Display this application version.</li>
+</ul>
+<h2 id="process-exit-codes">Process Exit Codes</h2>
+<ul>
+<li><strong>0:</strong> OK</li>
+<li><strong>1:</strong> Generic/unknown error code</li>
+<li><strong>2:</strong> Dependency solving error code</li>
+</ul>
+<h2 id="init">init</h2>
+<p>In the <a href="02-libraries.html">Libraries</a> chapter we looked at how to create a
+<code>composer.json</code> by hand. There is also an <code>init</code> command available to do this.</p>
+<p>When you run the command it will interactively ask you to fill in the fields,
+while using some smart defaults.</p>
+<pre class="language-"><code class="lang-sh">php composer.phar init
+</code></pre>
+<h3 id="options">Options</h3>
+<ul>
+<li><strong>--name:</strong> Name of the package.</li>
+<li><strong>--description:</strong> Description of the package.</li>
+<li><strong>--author:</strong> Author name of the package.</li>
+<li><strong>--type:</strong> Type of package.</li>
+<li><strong>--homepage:</strong> Homepage of the package.</li>
+<li><strong>--require:</strong> Package to require with a version constraint. Should be
+in format <code>foo/bar:1.0.0</code>.</li>
+<li><strong>--require-dev:</strong> Development requirements, see <strong>--require</strong>.</li>
+<li><strong>--stability (-s):</strong> Value for the <code>minimum-stability</code> field.</li>
+<li><strong>--license (-l):</strong> License of package.</li>
+<li><strong>--repository:</strong> Provide one (or more) custom repositories. They will be stored
+in the generated composer.json, and used for auto-completion when prompting for
+the list of requires. Every repository can be either an HTTP URL pointing
+to a <code>composer</code> repository or a JSON string which similar to what the
+<a href="04-schema.html#repositories">repositories</a> key accepts.</li>
+</ul>
+<h2 id="install--i">install / i</h2>
+<p>The <code>install</code> command reads the <code>composer.json</code> file from the current
+directory, resolves the dependencies, and installs them into <code>vendor</code>.</p>
+<pre class="language-"><code class="lang-sh">php composer.phar <span class="token function">install</span>
+</code></pre>
+<p>If there is a <code>composer.lock</code> file in the current directory, it will use the
+exact versions from there instead of resolving them. This ensures that
+everyone using the library will get the same versions of the dependencies.</p>
+<p>If there is no <code>composer.lock</code> file, Composer will create one after dependency
+resolution.</p>
+<h3 id="options">Options</h3>
+<ul>
+<li><strong>--prefer-source:</strong> There are two ways of downloading a package: <code>source</code>
+and <code>dist</code>. For stable versions Composer will use the <code>dist</code> by default.
+The <code>source</code> is a version control repository. If <code>--prefer-source</code> is
+enabled, Composer will install from <code>source</code> if there is one. This is
+useful if you want to make a bugfix to a project and get a local git
+clone of the dependency directly.</li>
+<li><strong>--prefer-dist:</strong> Reverse of <code>--prefer-source</code>, Composer will install
+from <code>dist</code> if possible. This can speed up installs substantially on build
+servers and other use cases where you typically do not run updates of the
+vendors. It is also a way to circumvent problems with git if you do not
+have a proper setup.</li>
+<li><strong>--dry-run:</strong> If you want to run through an installation without actually
+installing a package, you can use <code>--dry-run</code>. This will simulate the
+installation and show you what would happen.</li>
+<li><strong>--dev:</strong> Install packages listed in <code>require-dev</code> (this is the default behavior).</li>
+<li><strong>--no-dev:</strong> Skip installing packages listed in <code>require-dev</code>. The autoloader
+generation skips the <code>autoload-dev</code> rules.</li>
+<li><strong>--no-autoloader:</strong> Skips autoloader generation.</li>
+<li><strong>--no-scripts:</strong> Skips execution of scripts defined in <code>composer.json</code>.</li>
+<li><strong>--no-progress:</strong> Removes the progress display that can mess with some
+terminals or scripts which don&apos;t handle backspace characters.</li>
+<li><strong>--optimize-autoloader (-o):</strong> Convert PSR-0/4 autoloading to classmap to get a faster
+autoloader. This is recommended especially for production, but can take
+a bit of time to run so it is currently not done by default.</li>
+<li><strong>--classmap-authoritative (-a):</strong> Autoload classes from the classmap only.
+Implicitly enables <code>--optimize-autoloader</code>.</li>
+<li><strong>--apcu-autoloader:</strong> Use APCu to cache found/not-found classes.</li>
+<li><strong>--apcu-autoloader-prefix:</strong> Use a custom prefix for the APCu autoloader cache.
+Implicitly enables <code>--apcu-autoloader</code>.</li>
+<li><strong>--ignore-platform-reqs:</strong> ignore all platform requirements (<code>php</code>, <code>hhvm</code>,
+<code>lib-*</code> and <code>ext-*</code>) and force the installation even if the local machine does
+not fulfill these.
+See also the <a href="06-config.html#platform"><code>platform</code></a> config option.</li>
+<li><strong>--ignore-platform-req:</strong> ignore a specific platform requirement(<code>php</code>,
+<code>hhvm</code>, <code>lib-*</code> and <code>ext-*</code>) and force the installation even if the local machine
+does not fulfill it.</li>
+</ul>
+<h2 id="update--u">update / u</h2>
+<p>In order to get the latest versions of the dependencies and to update the
+<code>composer.lock</code> file, you should use the <code>update</code> command. This command is also
+aliased as <code>upgrade</code> as it does the same as <code>upgrade</code> does if you are thinking
+of <code>apt-get</code> or similar package managers.</p>
+<pre class="language-"><code class="lang-sh">php composer.phar update
+</code></pre>
+<p>This will resolve all dependencies of the project and write the exact versions
+into <code>composer.lock</code>.</p>
+<p>If you only want to update a few packages and not all, you can list them as such:</p>
+<pre class="language-"><code class="lang-sh">php composer.phar update vendor/package vendor/package2
+</code></pre>
+<p>You can also use wildcards to update a bunch of packages at once:</p>
+<pre class="language-"><code class="lang-sh">php composer.phar update <span class="token string">&quot;vendor/*&quot;</span>
+</code></pre>
+<p>If you want to downgrade a package to a specific version without changing your
+composer.json you can use <code>--with</code> and provide a custom version constraint:</p>
+<pre class="language-"><code class="lang-sh">php composer.phar update --with vendor/package:2.0.1
+</code></pre>
+<p>The custom constraint has to be a subset of the existing constraint you have,
+and this feature is only available for your root package dependencies.</p>
+<p>If you only want to update the package(s) for which you provide custom constraints
+using <code>--with</code>, you can skip <code>--with</code> and just use constraints with the partial
+update syntax:</p>
+<pre class="language-"><code class="lang-sh">php composer.phar update vendor/package:2.0.1 vendor/package2:3.0.*
+</code></pre>
+<h3 id="options">Options</h3>
+<ul>
+<li><strong>--prefer-source:</strong> Install packages from <code>source</code> when available.</li>
+<li><strong>--prefer-dist:</strong> Install packages from <code>dist</code> when available.</li>
+<li><strong>--dry-run:</strong> Simulate the command without actually doing anything.</li>
+<li><strong>--dev:</strong> Install packages listed in <code>require-dev</code> (this is the default behavior).</li>
+<li><strong>--no-dev:</strong> Skip installing packages listed in <code>require-dev</code>. The autoloader generation skips the <code>autoload-dev</code> rules.</li>
+<li><strong>--no-install:</strong> Does not run the install step after updating the composer.lock file.</li>
+<li><strong>--lock:</strong> Only updates the lock file hash to suppress warning about the
+lock file being out of date.</li>
+<li><strong>--with:</strong> Temporary version constraint to add, e.g. foo/bar:1.0.0 or foo/bar=1.0.0</li>
+<li><strong>--no-autoloader:</strong> Skips autoloader generation.</li>
+<li><strong>--no-scripts:</strong> Skips execution of scripts defined in <code>composer.json</code>.</li>
+<li><strong>--no-progress:</strong> Removes the progress display that can mess with some
+terminals or scripts which don&apos;t handle backspace characters.</li>
+<li><strong>--with-dependencies (-w):</strong> Update also dependencies of packages in the argument list, except those which are root requirements.</li>
+<li><strong>--with-all-dependencies (-W):</strong> Update also dependencies of packages in the argument list, including those which are root requirements.</li>
+<li><strong>--optimize-autoloader (-o):</strong> Convert PSR-0/4 autoloading to classmap to get a faster
+autoloader. This is recommended especially for production, but can take
+a bit of time to run, so it is currently not done by default.</li>
+<li><strong>--classmap-authoritative (-a):</strong> Autoload classes from the classmap only.
+Implicitly enables <code>--optimize-autoloader</code>.</li>
+<li><strong>--apcu-autoloader:</strong> Use APCu to cache found/not-found classes.</li>
+<li><strong>--apcu-autoloader-prefix:</strong> Use a custom prefix for the APCu autoloader cache.
+Implicitly enables <code>--apcu-autoloader</code>.</li>
+<li><strong>--ignore-platform-reqs:</strong> ignore all platform requirements (<code>php</code>, <code>hhvm</code>,
+<code>lib-*</code> and <code>ext-*</code>) and force the installation even if the local machine does
+not fulfill these.
+See also the <a href="06-config.html#platform"><code>platform</code></a> config option.</li>
+<li><strong>--ignore-platform-req:</strong> ignore a specific platform requirement(<code>php</code>,
+<code>hhvm</code>, <code>lib-*</code> and <code>ext-*</code>) and force the installation even if the local machine
+does not fulfill it.</li>
+<li><strong>--prefer-stable:</strong> Prefer stable versions of dependencies.</li>
+<li><strong>--prefer-lowest:</strong> Prefer lowest versions of dependencies. Useful for testing minimal
+versions of requirements, generally used with <code>--prefer-stable</code>.</li>
+<li><strong>--interactive:</strong> Interactive interface with autocompletion to select the packages to update.</li>
+<li><strong>--root-reqs:</strong> Restricts the update to your first degree dependencies.</li>
+</ul>
+<p>Specifying one of the words <code>mirrors</code>, <code>lock</code>, or <code>nothing</code> as an argument has the same effect as specifying the option <code>--lock</code>, for example <code>composer update mirrors</code> is exactly the same as <code>composer update --lock</code>.</p>
+<h2 id="require">require</h2>
+<p>The <code>require</code> command adds new packages to the <code>composer.json</code> file from
+the current directory. If no file exists one will be created on the fly.</p>
+<pre class="language-"><code class="lang-sh">php composer.phar require
+</code></pre>
+<p>After adding/changing the requirements, the modified requirements will be
+installed or updated.</p>
+<p>If you do not want to choose requirements interactively, you can pass them
+to the command.</p>
+<pre class="language-"><code class="lang-sh">php composer.phar require <span class="token string">&quot;vendor/package:2.*&quot;</span> vendor/package2:dev-master
+</code></pre>
+<p>If you do not specify a package, composer will prompt you to search for a package, and given results, provide a list of  matches to require.</p>
+<h3 id="options">Options</h3>
+<ul>
+<li><strong>--dev:</strong> Add packages to <code>require-dev</code>.</li>
+<li><strong>--dry-run:</strong> Simulate the command without actually doing anything.</li>
+<li><strong>--prefer-source:</strong> Install packages from <code>source</code> when available.</li>
+<li><strong>--prefer-dist:</strong> Install packages from <code>dist</code> when available.</li>
+<li><strong>--no-progress:</strong> Removes the progress display that can mess with some
+terminals or scripts which don&apos;t handle backspace characters.</li>
+<li><strong>--no-update:</strong> Disables the automatic update of the dependencies (implies --no-install).</li>
+<li><strong>--no-install:</strong> Does not run the install step after updating the composer.lock file.</li>
+<li><strong>--no-scripts:</strong> Skips execution of scripts defined in <code>composer.json</code>.</li>
+<li><strong>--update-no-dev:</strong> Run the dependency update with the <code>--no-dev</code> option.</li>
+<li><strong>--update-with-dependencies (-w):</strong> Also update dependencies of the newly required packages, except those that are root requirements.</li>
+<li><strong>--update-with-all-dependencies (-W):</strong> Also update dependencies of the newly required packages, including those that are root requirements.</li>
+<li><strong>--ignore-platform-reqs:</strong> ignore all platform requirements (<code>php</code>, <code>hhvm</code>,
+<code>lib-*</code> and <code>ext-*</code>) and force the installation even if the local machine does
+not fulfill these.
+See also the <a href="06-config.html#platform"><code>platform</code></a> config option.</li>
+<li><strong>--ignore-platform-req:</strong> ignore a specific platform requirement(<code>php</code>,
+<code>hhvm</code>, <code>lib-*</code> and <code>ext-*</code>) and force the installation even if the local machine
+does not fulfill it.</li>
+<li><strong>--prefer-stable:</strong> Prefer stable versions of dependencies.</li>
+<li><strong>--prefer-lowest:</strong> Prefer lowest versions of dependencies. Useful for testing minimal
+versions of requirements, generally used with <code>--prefer-stable</code>.</li>
+<li><strong>--sort-packages:</strong> Keep packages sorted in <code>composer.json</code>.</li>
+<li><strong>--optimize-autoloader (-o):</strong> Convert PSR-0/4 autoloading to classmap to
+get a faster autoloader. This is recommended especially for production, but
+can take a bit of time to run, so it is currently not done by default.</li>
+<li><strong>--classmap-authoritative (-a):</strong> Autoload classes from the classmap only.
+Implicitly enables <code>--optimize-autoloader</code>.</li>
+<li><strong>--apcu-autoloader:</strong> Use APCu to cache found/not-found classes.</li>
+<li><strong>--apcu-autoloader-prefix:</strong> Use a custom prefix for the APCu autoloader cache.
+Implicitly enables <code>--apcu-autoloader</code>.</li>
+</ul>
+<h2 id="remove">remove</h2>
+<p>The <code>remove</code> command removes packages from the <code>composer.json</code> file from
+the current directory.</p>
+<pre class="language-"><code class="lang-sh">php composer.phar remove vendor/package vendor/package2
+</code></pre>
+<p>After removing the requirements, the modified requirements will be
+uninstalled.</p>
+<h3 id="options">Options</h3>
+<ul>
+<li><strong>--dev:</strong> Remove packages from <code>require-dev</code>.</li>
+<li><strong>--dry-run:</strong> Simulate the command without actually doing anything.</li>
+<li><strong>--no-progress:</strong> Removes the progress display that can mess with some
+terminals or scripts which don&apos;t handle backspace characters.</li>
+<li><strong>--no-update:</strong> Disables the automatic update of the dependencies (implies --no-install).</li>
+<li><strong>--no-install:</strong> Does not run the install step after updating the composer.lock file.</li>
+<li><strong>--no-scripts:</strong> Skips execution of scripts defined in <code>composer.json</code>.</li>
+<li><strong>--update-no-dev:</strong> Run the dependency update with the --no-dev option.</li>
+<li><strong>--update-with-dependencies (-w):</strong> Also update dependencies of the removed packages.
+(Deprecated, is now default behavior)</li>
+<li><strong>--update-with-all-dependencies (-W):</strong> Allows all inherited dependencies to be updated,
+including those that are root requirements.</li>
+<li><strong>--ignore-platform-reqs:</strong> ignore all platform requirements (<code>php</code>, <code>hhvm</code>,
+<code>lib-*</code> and <code>ext-*</code>) and force the installation even if the local machine does
+not fulfill these.
+See also the <a href="06-config.html#platform"><code>platform</code></a> config option.</li>
+<li><strong>--ignore-platform-req:</strong> ignore a specific platform requirement(<code>php</code>,
+<code>hhvm</code>, <code>lib-*</code> and <code>ext-*</code>) and force the installation even if the local machine
+does not fulfill it.</li>
+<li><strong>--optimize-autoloader (-o):</strong> Convert PSR-0/4 autoloading to classmap to
+get a faster autoloader. This is recommended especially for production, but
+can take a bit of time to run so it is currently not done by default.</li>
+<li><strong>--classmap-authoritative (-a):</strong> Autoload classes from the classmap only.
+Implicitly enables <code>--optimize-autoloader</code>.</li>
+<li><strong>--apcu-autoloader:</strong> Use APCu to cache found/not-found classes.</li>
+<li><strong>--apcu-autoloader-prefix:</strong> Use a custom prefix for the APCu autoloader cache.
+Implicitly enables <code>--apcu-autoloader</code>.</li>
+</ul>
+<h2 id="check-platform-reqs">check-platform-reqs</h2>
+<p>The check-platform-reqs command checks that your PHP and extensions versions
+match the platform requirements of the installed packages. This can be used
+to verify that a production server has all the extensions needed to run a
+project after installing it for example.</p>
+<p>Unlike update/install, this command will ignore config.platform settings and
+check the real platform packages so you can be certain you have the required
+platform dependencies.</p>
+<h2 id="global">global</h2>
+<p>The global command allows you to run other commands like <code>install</code>, <code>remove</code>, <code>require</code>
+or <code>update</code> as if you were running them from the <a href="#composer-home">COMPOSER_HOME</a>
+directory.</p>
+<p>This is merely a helper to manage a project stored in a central location that
+can hold CLI tools or Composer plugins that you want to have available everywhere.</p>
+<p>This can be used to install CLI utilities globally. Here is an example:</p>
+<pre class="language-"><code class="lang-sh">php composer.phar global require friendsofphp/php-cs-fixer
+</code></pre>
+<p>Now the <code>php-cs-fixer</code> binary is available globally. Make sure your global
+<a href="articles/vendor-binaries.html">vendor binaries</a> directory is in your <code>$PATH</code>
+environment variable, you can get its location with the following command :</p>
+<pre class="language-"><code class="lang-sh">php composer.phar global config bin-dir --absolute
+</code></pre>
+<p>If you wish to update the binary later on you can run a global update:</p>
+<pre class="language-"><code class="lang-sh">php composer.phar global update
+</code></pre>
+<h2 id="search">search</h2>
+<p>The search command allows you to search through the current project&apos;s package
+repositories. Usually this will be packagist. You pass it the terms you want
+to search for.</p>
+<pre class="language-"><code class="lang-sh">php composer.phar search monolog
+</code></pre>
+<p>You can also search for more than one term by passing multiple arguments.</p>
+<h3 id="options">Options</h3>
+<ul>
+<li><strong>--only-name (-N):</strong> Search only in name.</li>
+<li><strong>--type (-t):</strong> Search for a specific package type.</li>
+</ul>
+<h2 id="show">show</h2>
+<p>To list all of the available packages, you can use the <code>show</code> command.</p>
+<pre class="language-"><code class="lang-sh">php composer.phar show
+</code></pre>
+<p>To filter the list you can pass a package mask using wildcards.</p>
+<pre class="language-"><code class="lang-sh">php composer.phar show monolog/*
+
+monolog/monolog <span class="token number">1.19</span>.0 Sends your logs to files, sockets, inboxes, databases and various web services
+</code></pre>
+<p>If you want to see the details of a certain package, you can pass the package
+name.</p>
+<pre class="language-"><code class="lang-sh">php composer.phar show monolog/monolog
+
+name     <span class="token builtin class-name">:</span> monolog/monolog
+versions <span class="token builtin class-name">:</span> master-dev, <span class="token number">1.0</span>.2, <span class="token number">1.0</span>.1, <span class="token number">1.0</span>.0, <span class="token number">1.0</span>.0-RC1
+<span class="token builtin class-name">type</span>     <span class="token builtin class-name">:</span> library
+names    <span class="token builtin class-name">:</span> monolog/monolog
+<span class="token builtin class-name">source</span>   <span class="token builtin class-name">:</span> <span class="token punctuation">[</span>git<span class="token punctuation">]</span> https://github.com/Seldaek/monolog.git 3d4e60d0cbc4b888fe5ad223d77964428b1978da
+dist     <span class="token builtin class-name">:</span> <span class="token punctuation">[</span>zip<span class="token punctuation">]</span> https://github.com/Seldaek/monolog/zipball/3d4e60d0cbc4b888fe5ad223d77964428b1978da 3d4e60d0cbc4b888fe5ad223d77964428b1978da
+license  <span class="token builtin class-name">:</span> MIT
+
+autoload
+psr-0
+Monolog <span class="token builtin class-name">:</span> src/
+
+requires
+php <span class="token operator">&gt;</span><span class="token operator">=</span><span class="token number">5.3</span>.0
+</code></pre>
+<p>You can even pass the package version, which will tell you the details of that
+specific version.</p>
+<pre class="language-"><code class="lang-sh">php composer.phar show monolog/monolog <span class="token number">1.0</span>.2
+</code></pre>
+<h3 id="options">Options</h3>
+<ul>
+<li><strong>--all :</strong> List all packages available in all your repositories.</li>
+<li><strong>--installed (-i):</strong> List the packages that are installed (this is enabled by default, and deprecated).</li>
+<li><strong>--locked:</strong> List the locked packages from composer.lock.</li>
+<li><strong>--platform (-p):</strong> List only platform packages (php &amp; extensions).</li>
+<li><strong>--available (-a):</strong> List available packages only.</li>
+<li><strong>--self (-s):</strong> List the root package info.</li>
+<li><strong>--name-only (-N):</strong> List package names only.</li>
+<li><strong>--path (-P):</strong> List package paths.</li>
+<li><strong>--tree (-t):</strong> List your dependencies as a tree. If you pass a package name it will show the dependency tree for that package.</li>
+<li><strong>--latest (-l):</strong> List all installed packages including their latest version.</li>
+<li><strong>--outdated (-o):</strong> Implies --latest, but this lists <em>only</em> packages that have a newer version available.</li>
+<li><strong>--no-dev:</strong> Filters dev dependencies from the package list.</li>
+<li><strong>--minor-only (-m):</strong> Use with --latest. Only shows packages that have minor SemVer-compatible updates.</li>
+<li><strong>--direct (-D):</strong> Restricts the list of packages to your direct dependencies.</li>
+<li><strong>--strict:</strong> Return a non-zero exit code when there are outdated packages.</li>
+<li><strong>--format (-f):</strong> Lets you pick between text (default) or json output format.</li>
+</ul>
+<h2 id="outdated">outdated</h2>
+<p>The <code>outdated</code> command shows a list of installed packages that have updates available,
+including their current and latest versions. This is basically an alias for
+<code>composer show -lo</code>.</p>
+<p>The color coding is as such:</p>
+<ul>
+<li><strong>green (=)</strong>: Dependency is in the latest version and is up to date.</li>
+<li><strong>yellow (<code>~</code>)</strong>: Dependency has a new version available that includes backwards compatibility breaks according to semver, so upgrade when
+you can but it may involve work.</li>
+<li><strong>red (!)</strong>: Dependency has a new version that is semver-compatible and you should upgrade it.</li>
+</ul>
+<h3 id="options">Options</h3>
+<ul>
+<li><strong>--all (-a):</strong> Show all packages, not just outdated (alias for <code>composer show -l</code>).</li>
+<li><strong>--direct (-D):</strong> Restricts the list of packages to your direct dependencies.</li>
+<li><strong>--strict:</strong> Returns non-zero exit code if any package is outdated.</li>
+<li><strong>--minor-only (-m):</strong> Only shows packages that have minor SemVer-compatible updates.</li>
+<li><strong>--format (-f):</strong> Lets you pick between text (default) or json output format.</li>
+<li><strong>--no-dev:</strong> Do not show outdated dev dependencies.</li>
+<li><strong>--locked:</strong> Shows updates for packages from the lock file, regardless of what is currently in vendor dir.</li>
+</ul>
+<h2 id="browse--home">browse / home</h2>
+<p>The <code>browse</code> (aliased to <code>home</code>) opens a package&apos;s repository URL or homepage
+in your browser.</p>
+<h3 id="options">Options</h3>
+<ul>
+<li><strong>--homepage (-H):</strong> Open the homepage instead of the repository URL.</li>
+<li><strong>--show (-s):</strong> Only show the homepage or repository URL.</li>
+</ul>
+<h2 id="suggests">suggests</h2>
+<p>Lists all packages suggested by currently installed set of packages. You can
+optionally pass one or multiple package names in the format of <code>vendor/package</code>
+to limit output to suggestions made by those packages only.</p>
+<p>Use the <code>--by-package</code> (default) or <code>--by-suggestion</code> flags to group the output by
+the package offering the suggestions or the suggested packages respectively.</p>
+<p>If you only want a list of suggested package names, use <code>--list</code>.</p>
+<h3 id="options">Options</h3>
+<ul>
+<li><strong>--by-package:</strong> Groups output by suggesting package (default).</li>
+<li><strong>--by-suggestion:</strong> Groups output by suggested package.</li>
+<li><strong>--all:</strong> Show suggestions from all dependencies, including transitive ones (by
+default only direct dependencies&apos; suggestions are shown).</li>
+<li><strong>--list:</strong> Show only list of suggested package names.</li>
+<li><strong>--no-dev:</strong> Excludes suggestions from <code>require-dev</code> packages.</li>
+</ul>
+<h2 id="fund">fund</h2>
+<p>Discover how to help fund the maintenance of your dependencies. This lists
+all funding links from the installed dependencies. Use <code>--format=json</code> to
+get machine-readable output.</p>
+<h3 id="options">Options</h3>
+<ul>
+<li><strong>--format:</strong> Format of the output: text, json or summary (default: &quot;text&quot;)</li>
+</ul>
+<h2 id="depends-why">depends (why)</h2>
+<p>The <code>depends</code> command tells you which other packages depend on a certain
+package. As with installation <code>require-dev</code> relationships are only considered
+for the root package.</p>
+<pre class="language-"><code class="lang-sh">php composer.phar depends doctrine/lexer
+ doctrine/annotations v1.2.7 requires doctrine/lexer <span class="token punctuation">(</span><span class="token number">1</span>.*<span class="token punctuation">)</span>
+ doctrine/common      v2.6.1 requires doctrine/lexer <span class="token punctuation">(</span><span class="token number">1</span>.*<span class="token punctuation">)</span>
+</code></pre>
+<p>You can optionally specify a version constraint after the package to limit the
+search.</p>
+<p>Add the <code>--tree</code> or <code>-t</code> flag to show a recursive tree of why the package is
+depended upon, for example:</p>
+<pre class="language-"><code class="lang-sh">php composer.phar depends psr/log -t
+psr/log <span class="token number">1.0</span>.0 Common interface <span class="token keyword">for</span> logging libraries
+<span class="token operator">|</span>- aboutyou/app-sdk <span class="token number">2.6</span>.11 <span class="token punctuation">(</span>requires psr/log <span class="token number">1.0</span>.*<span class="token punctuation">)</span>
+<span class="token operator">|</span>  <span class="token variable"><span class="token variable">`</span>- __root__ <span class="token punctuation">(</span>requires aboutyou/app-sdk ^2.6<span class="token punctuation">)</span>
+<span class="token operator">|</span>- monolog/monolog <span class="token number">1.17</span>.2 <span class="token punctuation">(</span>requires psr/log ~1.0<span class="token punctuation">)</span>
+<span class="token operator">|</span>  <span class="token variable">`</span></span>- laravel/framework v5.2.16 <span class="token punctuation">(</span>requires monolog/monolog ~1.11<span class="token punctuation">)</span>
+<span class="token operator">|</span>     <span class="token variable"><span class="token variable">`</span>- __root__ <span class="token punctuation">(</span>requires laravel/framework ^5.2<span class="token punctuation">)</span>
+<span class="token variable">`</span></span>- symfony/symfony v3.0.2 <span class="token punctuation">(</span>requires psr/log ~1.0<span class="token punctuation">)</span>
+   `- __root__ <span class="token punctuation">(</span>requires symfony/symfony ^3.0<span class="token punctuation">)</span>
+</code></pre>
+<h3 id="options">Options</h3>
+<ul>
+<li><strong>--recursive (-r):</strong> Recursively resolves up to the root package.</li>
+<li><strong>--tree (-t):</strong> Prints the results as a nested tree, implies -r.</li>
+</ul>
+<h2 id="prohibits-why-not">prohibits (why-not)</h2>
+<p>The <code>prohibits</code> command tells you which packages are blocking a given package
+from being installed. Specify a version constraint to verify whether upgrades
+can be performed in your project, and if not why not. See the following
+example:</p>
+<pre class="language-"><code class="lang-sh">php composer.phar prohibits symfony/symfony <span class="token number">3.1</span>
+ laravel/framework v5.2.16 requires symfony/var-dumper <span class="token punctuation">(</span><span class="token number">2.8</span>.*<span class="token operator">|</span><span class="token number">3.0</span>.*<span class="token punctuation">)</span>
+</code></pre>
+<p>Note that you can also specify platform requirements, for example to check
+whether you can upgrade your server to PHP 8.0:</p>
+<pre class="language-"><code class="lang-sh">php composer.phar prohibits php:8
+ doctrine/cache        v1.6.0 requires php <span class="token punctuation">(</span>~5.5<span class="token operator">|</span>~7.0<span class="token punctuation">)</span>
+ doctrine/common       v2.6.1 requires php <span class="token punctuation">(</span>~5.5<span class="token operator">|</span>~7.0<span class="token punctuation">)</span>
+ doctrine/instantiator <span class="token number">1.0</span>.5  requires php <span class="token punctuation">(</span><span class="token operator">&gt;</span><span class="token operator">=</span><span class="token number">5.3</span>,<span class="token operator">&lt;</span><span class="token number">8.0</span>-DEV<span class="token punctuation">)</span>
+</code></pre>
+<p>As with <code>depends</code> you can request a recursive lookup, which will list all
+packages depending on the packages that cause the conflict.</p>
+<h3 id="options">Options</h3>
+<ul>
+<li><strong>--recursive (-r):</strong> Recursively resolves up to the root package.</li>
+<li><strong>--tree (-t):</strong> Prints the results as a nested tree, implies -r.</li>
+</ul>
+<h2 id="validate">validate</h2>
+<p>You should always run the <code>validate</code> command before you commit your
+<code>composer.json</code> file, and before you tag a release. It will check if your
+<code>composer.json</code> is valid.</p>
+<pre class="language-"><code class="lang-sh">php composer.phar validate
+</code></pre>
+<h3 id="options">Options</h3>
+<ul>
+<li><strong>--no-check-all:</strong> Do not emit a warning if requirements in <code>composer.json</code> use unbound or overly strict version constraints.</li>
+<li><strong>--no-check-lock:</strong> Do not emit an error if <code>composer.lock</code> exists and is not up to date.</li>
+<li><strong>--no-check-publish:</strong> Do not emit an error if <code>composer.json</code> is unsuitable for publishing as a package on Packagist but is otherwise valid.</li>
+<li><strong>--with-dependencies:</strong> Also validate the composer.json of all installed dependencies.</li>
+<li><strong>--strict:</strong> Return a non-zero exit code for warnings as well as errors.</li>
+</ul>
+<h2 id="status">status</h2>
+<p>If you often need to modify the code of your dependencies and they are
+installed from source, the <code>status</code> command allows you to check if you have
+local changes in any of them.</p>
+<pre class="language-"><code class="lang-sh">php composer.phar status
+</code></pre>
+<p>With the <code>--verbose</code> option you get some more information about what was
+changed:</p>
+<pre class="language-"><code class="lang-sh">php composer.phar status -v
+
+You have changes <span class="token keyword">in</span> the following dependencies:
+vendor/seld/jsonlint:
+    M README.mdown
+</code></pre>
+<h2 id="self-update-selfupdate">self-update (selfupdate)</h2>
+<p>To update Composer itself to the latest version, run the <code>self-update</code>
+command. It will replace your <code>composer.phar</code> with the latest version.</p>
+<pre class="language-"><code class="lang-sh">php composer.phar self-update
+</code></pre>
+<p>If you would like to instead update to a specific release specify it:</p>
+<pre class="language-"><code class="lang-sh">php composer.phar self-update <span class="token number">1.0</span>.0-alpha7
+</code></pre>
+<p>If you have installed Composer for your entire system (see <a href="00-intro.md#globally">global installation</a>),
+you may have to run the command with <code>root</code> privileges</p>
+<pre class="language-"><code class="lang-sh"><span class="token function">sudo</span> -H composer self-update
+</code></pre>
+<p>If Composer was not installed as a PHAR, this command is not available.
+(This is sometimes the case when Composer was installed by an operating system package manager.)</p>
+<h3 id="options">Options</h3>
+<ul>
+<li><strong>--rollback (-r):</strong> Rollback to the last version you had installed.</li>
+<li><strong>--clean-backups:</strong> Delete old backups during an update. This makes the
+current version of Composer the only backup available after the update.</li>
+<li><strong>--no-progress:</strong> Do not output download progress.</li>
+<li><strong>--update-keys:</strong> Prompt user for a key update.</li>
+<li><strong>--stable:</strong> Force an update to the stable channel.</li>
+<li><strong>--preview:</strong> Force an update to the preview channel.</li>
+<li><strong>--snapshot:</strong> Force an update to the snapshot channel.</li>
+<li><strong>--1:</strong> Force an update to the stable channel, but only use 1.x versions</li>
+<li><strong>--2:</strong> Force an update to the stable channel, but only use 2.x versions</li>
+<li><strong>--set-channel-only:</strong> Only store the channel as the default one and then exit</li>
+</ul>
+<h2 id="config">config</h2>
+<p>The <code>config</code> command allows you to edit composer config settings and repositories
+in either the local <code>composer.json</code> file or the global <code>config.json</code> file.</p>
+<p>Additionally it lets you edit most properties in the local <code>composer.json</code>.</p>
+<pre class="language-"><code class="lang-sh">php composer.phar config --list
+</code></pre>
+<h3 id="usage">Usage</h3>
+<p><code>config [options] [setting-key] [setting-value1] ... [setting-valueN]</code></p>
+<p><code>setting-key</code> is a configuration option name and <code>setting-value1</code> is a
+configuration value.  For settings that can take an array of values (like
+<code>github-protocols</code>), more than one setting-value arguments are allowed.</p>
+<p>You can also edit the values of the following properties:</p>
+<p><code>description</code>, <code>homepage</code>, <code>keywords</code>, <code>license</code>, <code>minimum-stability</code>,
+<code>name</code>, <code>prefer-stable</code>, <code>type</code> and <code>version</code>.</p>
+<p>See the <a href="06-config.html">Config</a> chapter for valid configuration options.</p>
+<h3 id="options">Options</h3>
+<ul>
+<li><strong>--global (-g):</strong> Operate on the global config file located at
+<code>$COMPOSER_HOME/config.json</code> by default.  Without this option, this command
+affects the local composer.json file or a file specified by <code>--file</code>.</li>
+<li><strong>--editor (-e):</strong> Open the local composer.json file using in a text editor as
+defined by the <code>EDITOR</code> env variable.  With the <code>--global</code> option, this opens
+the global config file.</li>
+<li><strong>--auth (-a):</strong> Affect auth config file (only used for --editor).</li>
+<li><strong>--unset:</strong> Remove the configuration element named by <code>setting-key</code>.</li>
+<li><strong>--list (-l):</strong> Show the list of current config variables.  With the <code>--global</code>
+option this lists the global configuration only.</li>
+<li><strong>--file=&quot;...&quot; (-f):</strong> Operate on a specific file instead of composer.json. Note
+that this cannot be used in conjunction with the <code>--global</code> option.</li>
+<li><strong>--absolute:</strong> Returns absolute paths when fetching <code>*-dir</code> config values
+instead of relative.</li>
+<li><strong>--json:</strong> JSON decode the setting value, to be used with <code>extra.*</code> keys.</li>
+<li><strong>--merge:</strong> Merge the setting value with the current value, to be used with <code>extra.*</code> keys in combination with <code>--json</code>.</li>
+</ul>
+<h3 id="modifying-repositories">Modifying Repositories</h3>
+<p>In addition to modifying the config section, the <code>config</code> command also supports making
+changes to the repositories section by using it the following way:</p>
+<pre class="language-"><code class="lang-sh">php composer.phar config repositories.foo vcs https://github.com/foo/bar
+</code></pre>
+<p>If your repository requires more configuration options, you can instead pass its JSON representation :</p>
+<pre class="language-"><code class="lang-sh">php composer.phar config repositories.foo <span class="token string">&apos;{&quot;type&quot;: &quot;vcs&quot;, &quot;url&quot;: &quot;http://svn.example.org/my-project/&quot;, &quot;trunk-path&quot;: &quot;master&quot;}&apos;</span>
+</code></pre>
+<h3 id="modifying-extra-values">Modifying Extra Values</h3>
+<p>In addition to modifying the config section, the <code>config</code> command also supports making
+changes to the extra section by using it the following way:</p>
+<pre class="language-"><code class="lang-sh">php composer.phar config extra.foo.bar value
+</code></pre>
+<p>The dots indicate array nesting, a max depth of 3 levels is allowed though. The above
+would set <code>&quot;extra&quot;: { &quot;foo&quot;: { &quot;bar&quot;: &quot;value&quot; } }</code>.</p>
+<p>If you have a complex value to add/modify, you can use the <code>--json</code> and <code>--merge</code> flags
+to edit extra fields as json:</p>
+<pre class="language-"><code class="lang-sh">php composer.phar config --json extra.foo.bar <span class="token string">&apos;{&quot;baz&quot;: true, &quot;qux&quot;: []}&apos;</span>
+</code></pre>
+<h2 id="create-project">create-project</h2>
+<p>You can use Composer to create new projects from an existing package. This is
+the equivalent of doing a git clone/svn checkout followed by a <code>composer install</code>
+of the vendors.</p>
+<p>There are several applications for this:</p>
+<ol>
+<li>You can deploy application packages.</li>
+<li>You can check out any package and start developing on patches for example.</li>
+<li>Projects with multiple developers can use this feature to bootstrap the
+initial application for development.</li>
+</ol>
+<p>To create a new project using Composer you can use the <code>create-project</code> command.
+Pass it a package name, and the directory to create the project in. You can also
+provide a version as third argument, otherwise the latest version is used.</p>
+<p>If the directory does not currently exist, it will be created during installation.</p>
+<pre class="language-"><code class="lang-sh">php composer.phar create-project doctrine/orm path <span class="token string">&quot;2.2.*&quot;</span>
+</code></pre>
+<p>It is also possible to run the command without params in a directory with an
+existing <code>composer.json</code> file to bootstrap a project.</p>
+<p>By default the command checks for the packages on packagist.org.</p>
+<h3 id="options">Options</h3>
+<ul>
+<li><strong>--stability (-s):</strong> Minimum stability of package. Defaults to <code>stable</code>.</li>
+<li><strong>--prefer-source:</strong> Install packages from <code>source</code> when available.</li>
+<li><strong>--prefer-dist:</strong> Install packages from <code>dist</code> when available.</li>
+<li><strong>--repository:</strong> Provide a custom repository to search for the package,
+which will be used instead of packagist. Can be either an HTTP URL pointing
+to a <code>composer</code> repository, a path to a local <code>packages.json</code> file, or a
+JSON string which similar to what the <a href="04-schema.html#repositories">repositories</a>
+key accepts. You can use this multiple times to configure multiple repositories.</li>
+<li><strong>--add-repository:</strong> Add the custom repository in the composer.json. If a lock
+file is present it will be deleted and an update will be run instead of install.</li>
+<li><strong>--dev:</strong> Install packages listed in <code>require-dev</code>.</li>
+<li><strong>--no-dev:</strong> Disables installation of require-dev packages.</li>
+<li><strong>--no-scripts:</strong> Disables the execution of the scripts defined in the root
+package.</li>
+<li><strong>--no-progress:</strong> Removes the progress display that can mess with some
+terminals or scripts which don&apos;t handle backspace characters.</li>
+<li><strong>--no-secure-http:</strong> Disable the secure-http config option temporarily while
+installing the root package. Use at your own risk. Using this flag is a bad
+idea.</li>
+<li><strong>--keep-vcs:</strong> Skip the deletion of the VCS metadata for the created
+project. This is mostly useful if you run the command in non-interactive
+mode.</li>
+<li><strong>--remove-vcs:</strong> Force-remove the VCS metadata without prompting.</li>
+<li><strong>--no-install:</strong> Disables installation of the vendors.</li>
+<li><strong>--ignore-platform-reqs:</strong> ignore all platform requirements (<code>php</code>, <code>hhvm</code>,
+<code>lib-*</code> and <code>ext-*</code>) and force the installation even if the local machine does
+not fulfill these.
+See also the <a href="06-config.html#platform"><code>platform</code></a> config option.</li>
+<li><strong>--ignore-platform-req:</strong> ignore a specific platform requirement(<code>php</code>,
+<code>hhvm</code>, <code>lib-*</code> and <code>ext-*</code>) and force the installation even if the local machine
+does not fulfill it.</li>
+<li><strong>--ask:</strong> Ask user to provide target directory for new project.</li>
+</ul>
+<h2 id="dump-autoload-dumpautoload">dump-autoload (dumpautoload)</h2>
+<p>If you need to update the autoloader because of new classes in a classmap
+package for example, you can use <code>dump-autoload</code> to do that without having to
+go through an install or update.</p>
+<p>Additionally, it can dump an optimized autoloader that converts PSR-0/4 packages
+into classmap ones for performance reasons. In large applications with many
+classes, the autoloader can take up a substantial portion of every request&apos;s
+time. Using classmaps for everything is less convenient in development, but
+using this option you can still use PSR-0/4 for convenience and classmaps for
+performance.</p>
+<h3 id="options">Options</h3>
+<ul>
+<li><strong>--no-scripts:</strong> Skips the execution of all scripts defined in <code>composer.json</code> file.</li>
+<li><strong>--optimize (-o):</strong> Convert PSR-0/4 autoloading to classmap to get a faster
+autoloader. This is recommended especially for production, but can take
+a bit of time to run, so it is currently not done by default.</li>
+<li><strong>--classmap-authoritative (-a):</strong> Autoload classes from the classmap only.
+Implicitly enables <code>--optimize</code>.</li>
+<li><strong>--apcu:</strong> Use APCu to cache found/not-found classes.</li>
+<li><strong>--apcu-prefix:</strong> Use a custom prefix for the APCu autoloader cache.
+Implicitly enables <code>--apcu</code>.</li>
+<li><strong>--no-dev:</strong> Disables autoload-dev rules. (Deprecated: Composer now infers this
+automatically according to the last <code>install</code> or <code>update</code> run.)</li>
+<li><strong>--ignore-platform-reqs:</strong> ignore all <code>php</code>, <code>hhvm</code>, <code>lib-*</code> and <code>ext-*</code>
+requirements and skip the <a href="07-runtime.html#platform-check">platform check</a> for these.
+See also the <a href="06-config.html#platform"><code>platform</code></a> config option.</li>
+<li><strong>--ignore-platform-req:</strong> ignore a specific platform requirement (<code>php</code>, <code>hhvm</code>,
+<code>lib-*</code> and <code>ext-*</code>) and skip the <a href="07-runtime.html#platform-check">platform check</a> for it.</li>
+</ul>
+<h2 id="clear-cache--clearcache--cc">clear-cache / clearcache / cc</h2>
+<p>Deletes all content from Composer&apos;s cache directories.</p>
+<h2 id="licenses">licenses</h2>
+<p>Lists the name, version and license of every package installed. Use
+<code>--format=json</code> to get machine-readable output.</p>
+<h3 id="options">Options</h3>
+<ul>
+<li><strong>--format:</strong> Format of the output: text, json or summary (default: &quot;text&quot;)</li>
+<li><strong>--no-dev:</strong> Remove dev dependencies from the output</li>
+</ul>
+<h2 id="run-script">run-script</h2>
+<h3 id="options">Options</h3>
+<ul>
+<li><strong>--timeout:</strong> Set the script timeout in seconds, or 0 for no timeout.</li>
+<li><strong>--dev:</strong> Sets the dev mode.</li>
+<li><strong>--no-dev:</strong> Disable dev mode.</li>
+<li><strong>--list (-l):</strong> List user defined scripts.</li>
+</ul>
+<p>To run <a href="articles/scripts.html">scripts</a> manually you can use this command,
+give it the script name and optionally any required arguments.</p>
+<h2 id="exec">exec</h2>
+<p>Executes a vendored binary/script. You can execute any command and this will
+ensure that the Composer bin-dir is pushed on your PATH before the command
+runs.</p>
+<h3 id="options">Options</h3>
+<ul>
+<li><strong>--list (-l):</strong> List the available composer binaries.</li>
+</ul>
+<h2 id="diagnose">diagnose</h2>
+<p>If you think you found a bug, or something is behaving strangely, you might
+want to run the <code>diagnose</code> command to perform automated checks for many common
+problems.</p>
+<pre class="language-"><code class="lang-sh">php composer.phar diagnose
+</code></pre>
+<h2 id="archive">archive</h2>
+<p>This command is used to generate a zip/tar archive for a given package in a
+given version. It can also be used to archive your entire project without
+excluded/ignored files.</p>
+<pre class="language-"><code class="lang-sh">php composer.phar archive vendor/package <span class="token number">2.0</span>.21 --format<span class="token operator">=</span>zip
+</code></pre>
+<h3 id="options">Options</h3>
+<ul>
+<li><strong>--format (-f):</strong> Format of the resulting archive: tar or zip (default:
+&quot;tar&quot;)</li>
+<li><strong>--dir:</strong> Write the archive to this directory (default: &quot;.&quot;)</li>
+<li><strong>--file:</strong> Write the archive with the given file name.</li>
+</ul>
+<h2 id="help">help</h2>
+<p>To get more information about a certain command, you can use <code>help</code>.</p>
+<pre class="language-"><code class="lang-sh">php composer.phar <span class="token builtin class-name">help</span> <span class="token function">install</span>
+</code></pre>
+<h2 id="command-line-completion">Command-line completion</h2>
+<p>Command-line completion can be enabled by following instructions
+<a href="https://github.com/bamarni/symfony-console-autocomplete" target="_blank">on this page</a>.</p>
+<h2 id="environment-variables">Environment variables</h2>
+<p>You can set a number of environment variables that override certain settings.
+Whenever possible it is recommended to specify these settings in the <code>config</code>
+section of <code>composer.json</code> instead. It is worth noting that the env vars will
+always take precedence over the values specified in <code>composer.json</code>.</p>
+<h3 id="composer">COMPOSER</h3>
+<p>By setting the <code>COMPOSER</code> env variable it is possible to set the filename of
+<code>composer.json</code> to something else.</p>
+<p>For example:</p>
+<pre class="language-"><code class="lang-sh"><span class="token assign-left variable">COMPOSER</span><span class="token operator">=</span>composer-other.json php composer.phar <span class="token function">install</span>
+</code></pre>
+<p>The generated lock file will use the same name: <code>composer-other.lock</code> in this example.</p>
+<h3 id="composerallowsuperuser">COMPOSER_ALLOW_SUPERUSER</h3>
+<p>If set to 1, this env disables the warning about running commands as root/super user.
+It also disables automatic clearing of sudo sessions, so you should really only set this
+if you use Composer as super user at all times like in docker containers.</p>
+<h3 id="composerallowxdebug">COMPOSER_ALLOW_XDEBUG</h3>
+<p>If set to 1, this env allows running Composer when the Xdebug extension is enabled, without restarting PHP without it.</p>
+<h3 id="composerauth">COMPOSER_AUTH</h3>
+<p>The <code>COMPOSER_AUTH</code> var allows you to set up authentication as an environment variable.
+The contents of the variable should be a JSON formatted object containing <a href="articles/authentication-for-private-packages.html">http-basic,
+github-oauth, bitbucket-oauth, ... objects as needed</a>,
+and following the
+<a href="06-config.html">spec from the config</a>.</p>
+<h3 id="composerbindir">COMPOSER_BIN_DIR</h3>
+<p>By setting this option you can change the <code>bin</code> (<a href="articles/vendor-binaries.html">Vendor Binaries</a>)
+directory to something other than <code>vendor/bin</code>.</p>
+<h3 id="composercachedir">COMPOSER_CACHE_DIR</h3>
+<p>The <code>COMPOSER_CACHE_DIR</code> var allows you to change the Composer cache directory,
+which is also configurable via the <a href="06-config.html#cache-dir"><code>cache-dir</code></a> option.</p>
+<p>By default, it points to <code>$COMPOSER_HOME/cache</code> on *nix and macOS, and
+<code>C:\Users\<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>user</span><span class="token punctuation">&gt;</span></span>\AppData\Local\Composer</code> (or <code>%LOCALAPPDATA%/Composer</code>) on Windows.</p>
+<h3 id="composercafile">COMPOSER_CAFILE</h3>
+<p>By setting this environmental value, you can set a path to a certificate bundle
+file to be used during SSL/TLS peer verification.</p>
+<h3 id="composerdisablexdebugwarn">COMPOSER_DISABLE_XDEBUG_WARN</h3>
+<p>If set to 1, this env suppresses a warning when Composer is running with the Xdebug extension enabled.</p>
+<h3 id="composerdiscardchanges">COMPOSER_DISCARD_CHANGES</h3>
+<p>This env var controls the <a href="06-config.html#discard-changes"><code>discard-changes</code></a> config option.</p>
+<h3 id="composerhome">COMPOSER_HOME</h3>
+<p>The <code>COMPOSER_HOME</code> var allows you to change the Composer home directory. This
+is a hidden, global (per-user on the machine) directory that is shared between
+all projects.</p>
+<p>Use <code>composer config --global home</code> to see the location of the home directory.</p>
+<p>By default, it points to <code>C:\Users\<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>user</span><span class="token punctuation">&gt;</span></span>\AppData\Roaming\Composer</code> on Windows
+and <code>/Users/<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>user</span><span class="token punctuation">&gt;</span></span>/.composer</code> on macOS. On *nix systems that follow the <a href="https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html" target="_blank">XDG Base
+Directory Specifications</a>,
+it points to <code>$XDG_CONFIG_HOME/composer</code>. On other *nix systems, it points to
+<code>/home/<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>user</span><span class="token punctuation">&gt;</span></span>/.composer</code>.</p>
+<h4 id="composerhomeconfigjson">COMPOSER_HOME/config.json</h4>
+<p>You may put a <code>config.json</code> file into the location which <code>COMPOSER_HOME</code> points
+to. Composer will merge this configuration with your project&apos;s <code>composer.json</code>
+when you run the <code>install</code> and <code>update</code> commands.</p>
+<p>This file allows you to set <a href="05-repositories.html">repositories</a> and
+<a href="06-config.html">configuration</a> for the user&apos;s projects.</p>
+<p>In case global configuration matches <em>local</em> configuration, the <em>local</em>
+configuration in the project&apos;s <code>composer.json</code> always wins.</p>
+<h3 id="composerhtaccessprotect">COMPOSER_HTACCESS_PROTECT</h3>
+<p>Defaults to <code>1</code>. If set to <code>0</code>, Composer will not create <code>.htaccess</code> files in the
+composer home, cache, and data directories.</p>
+<h3 id="composermemorylimit">COMPOSER_MEMORY_LIMIT</h3>
+<p>If set, the value is used as php&apos;s memory_limit.</p>
+<h3 id="composermirrorpathrepos">COMPOSER_MIRROR_PATH_REPOS</h3>
+<p>If set to 1, this env changes the default path repository strategy to <code>mirror</code> instead
+of <code>symlink</code>. As it is the default strategy being set it can still be overwritten by
+repository options.</p>
+<h3 id="composernointeraction">COMPOSER_NO_INTERACTION</h3>
+<p>If set to 1, this env var will make Composer behave as if you passed the
+<code>--no-interaction</code> flag to every command. This can be set on build boxes/CI.</p>
+<h3 id="composerprocesstimeout">COMPOSER_PROCESS_TIMEOUT</h3>
+<p>This env var controls the time Composer waits for commands (such as git
+commands) to finish executing. The default value is 300 seconds (5 minutes).</p>
+<h3 id="composerrootversion">COMPOSER_ROOT_VERSION</h3>
+<p>By setting this var you can specify the version of the root package, if it
+cannot be guessed from VCS info and is not present in <code>composer.json</code>.</p>
+<h3 id="composervendordir">COMPOSER_VENDOR_DIR</h3>
+<p>By setting this var you can make Composer install the dependencies into a
+directory other than <code>vendor</code>.</p>
+<h3 id="httpproxy-or-httpproxy">http_proxy or HTTP_PROXY</h3>
+<p>If you are using Composer from behind an HTTP proxy, you can use the standard
+<code>http_proxy</code> or <code>HTTP_PROXY</code> env vars. Set it to the URL of your proxy.
+Many operating systems already set this variable for you.</p>
+<p>Using <code>http_proxy</code> (lowercased) or even defining both might be preferable since
+some tools like git or curl will only use the lower-cased <code>http_proxy</code> version.
+Alternatively you can also define the git proxy using
+<code>git config --global http.proxy <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>proxy</span> <span class="token attr-name">url</span><span class="token punctuation">&gt;</span></span></code>.</p>
+<p>If you are using Composer in a non-CLI context (i.e. integration into a CMS or
+similar use case), and need to support proxies, please provide the <code>CGI_HTTP_PROXY</code>
+environment variable instead. See <a href="https://httpoxy.org/" target="_blank">httpoxy.org</a> for further
+details.</p>
+<h3 id="composermaxparallelhttp">COMPOSER_MAX_PARALLEL_HTTP</h3>
+<p>Set to an integer to configure how many files can be downloaded in parallel. This
+defaults to 12 and must be between 1 and 50. If your proxy has issues with
+concurrency maybe you want to lower this. Increasing it should generally not result
+in performance gains.</p>
+<h3 id="httpproxyrequestfulluri">HTTP_PROXY_REQUEST_FULLURI</h3>
+<p>If you use a proxy, but it does not support the request_fulluri flag, then you
+should set this env var to <code>false</code> or <code>0</code> to prevent Composer from setting the
+request_fulluri option.</p>
+<h3 id="httpsproxyrequestfulluri">HTTPS_PROXY_REQUEST_FULLURI</h3>
+<p>If you use a proxy, but it does not support the request_fulluri flag for HTTPS
+requests, then you should set this env var to <code>false</code> or <code>0</code> to prevent Composer
+from setting the request_fulluri option.</p>
+<h3 id="composerselfupdatetarget">COMPOSER_SELF_UPDATE_TARGET</h3>
+<p>If set, makes the self-update command write the new Composer phar file into that path instead of overwriting itself. Useful for updating Composer on read-only filesystem.</p>
+<h3 id="noproxy-or-noproxy">no_proxy or NO_PROXY</h3>
+<p>If you are behind a proxy and would like to disable it for certain domains, you
+can use the <code>no_proxy</code> or <code>NO_PROXY</code> env var. Set it to a comma separated list of
+domains the proxy should <em>not</em> be used for.</p>
+<p>The env var accepts domains, IP addresses, and IP address blocks in CIDR
+notation. You can restrict the filter to a particular port (e.g. <code>:80</code>). You
+can also set it to <code>*</code> to ignore the proxy for all HTTP requests.</p>
+<h3 id="composerdisablenetwork">COMPOSER_DISABLE_NETWORK</h3>
+<p>If set to <code>1</code>, disables network access (best effort). This can be used for debugging or
+to run Composer on a plane or a starship with poor connectivity.</p>
+<p>If set to <code>prime</code>, GitHub VCS repositories will prime the cache, so it can then be used
+fully offline with <code>1</code>.</p>
+<h3 id="composerdebugevents">COMPOSER_DEBUG_EVENTS</h3>
+<p>If set to <code>1</code>, outputs information about events being dispatched, which can be
+useful for plugin authors to identify what is firing when exactly.</p>
+<p>&#x2190; <a href="02-libraries.html">Libraries</a>  |  <a href="04-schema.html">Schema</a> &#x2192;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="02-libraries.html" class="navigation navigation-prev " aria-label="Previous page: 02 Libraries">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="04-schema.html" class="navigation navigation-next " aria-label="Next page: 04 Schema">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"03 Cli","level":"1.8","depth":1,"next":{"title":"04 Schema","level":"1.9","depth":1,"path":"04-schema.md","ref":"04-schema.md","articles":[]},"previous":{"title":"02 Libraries","level":"1.7","depth":1,"path":"02-libraries.md","ref":"02-libraries.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-highlight","-livereload","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Composer 英文文档","language":"us-en","links":{"sidebar":{"Home":"https://docs.khs1994.com"}},"gitbook":"*"},"file":{"path":"03-cli.md","mtime":"2021-02-26T00:11:44.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-26T00:12:20.506Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

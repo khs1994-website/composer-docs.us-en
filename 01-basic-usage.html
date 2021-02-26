@@ -1,0 +1,900 @@
+
+<!DOCTYPE HTML>
+<html lang="us-en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>01 Basic Usage · Composer 英文文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="02-libraries.html" />
+    
+    
+    <link rel="prev" href="fixtures/fixtures.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://docs.khs1994.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Articles
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="articles/aliases.html">
+            
+                <a href="articles/aliases.html">
+            
+                    
+                    Aliases
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="articles/authentication-for-private-packages.html">
+            
+                <a href="articles/authentication-for-private-packages.html">
+            
+                    
+                    Authentication For Private Packages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="articles/autoloader-optimization.html">
+            
+                <a href="articles/autoloader-optimization.html">
+            
+                    
+                    Autoloader Optimization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="articles/custom-installers.html">
+            
+                <a href="articles/custom-installers.html">
+            
+                    
+                    Custom Installers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="articles/handling-private-packages.html">
+            
+                <a href="articles/handling-private-packages.html">
+            
+                    
+                    Handling Private Packages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="articles/plugins.html">
+            
+                <a href="articles/plugins.html">
+            
+                    
+                    Plugins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="articles/repository-priorities.html">
+            
+                <a href="articles/repository-priorities.html">
+            
+                    
+                    Repository Priorities
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="articles/resolving-merge-conflicts.html">
+            
+                <a href="articles/resolving-merge-conflicts.html">
+            
+                    
+                    Resolving Merge Conflicts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="articles/scripts.html">
+            
+                <a href="articles/scripts.html">
+            
+                    
+                    Scripts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="articles/troubleshooting.html">
+            
+                <a href="articles/troubleshooting.html">
+            
+                    
+                    Troubleshooting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="articles/vendor-binaries.html">
+            
+                <a href="articles/vendor-binaries.html">
+            
+                    
+                    Vendor Binaries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="articles/versions.html">
+            
+                <a href="articles/versions.html">
+            
+                    
+                    Versions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Dev
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="dev/DefaultPolicy.html">
+            
+                <a href="dev/DefaultPolicy.html">
+            
+                    
+                    Default Policy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Faqs
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="faqs/how-do-i-install-a-package-to-a-custom-path-for-my-framework.html">
+            
+                <a href="faqs/how-do-i-install-a-package-to-a-custom-path-for-my-framework.html">
+            
+                    
+                    How Do I Install A Package To A Custom Path For My Framework
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="faqs/how-to-install-composer-programmatically.html">
+            
+                <a href="faqs/how-to-install-composer-programmatically.html">
+            
+                    
+                    How To Install Composer Programmatically
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="faqs/how-to-install-untrusted-packages-safely.html">
+            
+                <a href="faqs/how-to-install-untrusted-packages-safely.html">
+            
+                    
+                    How To Install Untrusted Packages Safely
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="faqs/should-i-commit-the-dependencies-in-my-vendor-directory.html">
+            
+                <a href="faqs/should-i-commit-the-dependencies-in-my-vendor-directory.html">
+            
+                    
+                    Should I Commit The Dependencies In My Vendor Directory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="faqs/which-version-numbering-system-does-composer-itself-use.html">
+            
+                <a href="faqs/which-version-numbering-system-does-composer-itself-use.html">
+            
+                    
+                    Which Version Numbering System Does Composer Itself Use
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="faqs/why-are-unbound-version-constraints-a-bad-idea.html">
+            
+                <a href="faqs/why-are-unbound-version-constraints-a-bad-idea.html">
+            
+                    
+                    Why Are Unbound Version Constraints A Bad Idea
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="faqs/why-are-version-constraints-combining-comparisons-and-wildcards-a-bad-idea.html">
+            
+                <a href="faqs/why-are-version-constraints-combining-comparisons-and-wildcards-a-bad-idea.html">
+            
+                    
+                    Why Are Version Constraints Combining Comparisons And Wildcards A Bad Idea
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="faqs/why-can't-composer-load-repositories-recursively.html">
+            
+                <a href="faqs/why-can't-composer-load-repositories-recursively.html">
+            
+                    
+                    Why Can T Composer Load Repositories Recursively
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="fixtures/fixtures.html">
+            
+                <a href="fixtures/fixtures.html">
+            
+                    
+                    Fixtures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="01-basic-usage.html">
+            
+                <a href="01-basic-usage.html">
+            
+                    
+                    01 Basic Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="02-libraries.html">
+            
+                <a href="02-libraries.html">
+            
+                    
+                    02 Libraries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="03-cli.html">
+            
+                <a href="03-cli.html">
+            
+                    
+                    03 Cli
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="04-schema.html">
+            
+                <a href="04-schema.html">
+            
+                    
+                    04 Schema
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="05-repositories.html">
+            
+                <a href="05-repositories.html">
+            
+                    
+                    05 Repositories
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="06-config.html">
+            
+                <a href="06-config.html">
+            
+                    
+                    06 Config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="07-runtime.html">
+            
+                <a href="07-runtime.html">
+            
+                    
+                    07 Runtime
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="08-community.html">
+            
+                <a href="08-community.html">
+            
+                    
+                    08 Community
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >01 Basic Usage</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="basic-usage">Basic usage</h1>
+<h2 id="introduction">Introduction</h2>
+<p>For our basic usage introduction, we will be installing <code>monolog/monolog</code>,
+a logging library. If you have not yet installed Composer, refer to the
+<a href="00-intro.md">Intro</a> chapter.</p>
+<blockquote>
+<p><strong>Note:</strong> for the sake of simplicity, this introduction will assume you
+have performed a <a href="00-intro.md#locally">local</a> install of Composer.</p>
+</blockquote>
+<h2 id="composerjson-project-setup"><code>composer.json</code>: Project setup</h2>
+<p>To start using Composer in your project, all you need is a <code>composer.json</code>
+file. This file describes the dependencies of your project and may contain
+other metadata as well. It typically should go in the top-most directory of
+your project/VCS repository. You can technically run Composer anywhere but
+if you want to publish a package to Packagist.org, it will have to be able
+to find the file at the top of your VCS repository.</p>
+<h3 id="the-require-key">The <code>require</code> key</h3>
+<p>The first (and often only) thing you specify in <code>composer.json</code> is the
+<a href="04-schema.html#require"><code>require</code></a> key. You are telling Composer which
+packages your project depends on.</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;require&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;monolog/monolog&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1.0.*&quot;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>As you can see, <a href="04-schema.html#require"><code>require</code></a> takes an object that maps
+<strong>package names</strong> (e.g. <code>monolog/monolog</code>) to <strong>version constraints</strong> (e.g.
+<code>1.0.*</code>).</p>
+<p>Composer uses this information to search for the right set of files in package
+&quot;repositories&quot; that you register using the <a href="04-schema.html#repositories"><code>repositories</code></a>
+key, or in Packagist, the default package repository. In the above example,
+since no other repository has been registered in the <code>composer.json</code> file, it is
+assumed that the <code>monolog/monolog</code> package is registered on Packagist. (See more
+about Packagist <a href="#packagist">below</a>, or read more about repositories
+<a href="05-repositories.html">here</a>).</p>
+<h3 id="package-names">Package names</h3>
+<p>The package name consists of a vendor name and the project&apos;s name. Often these
+will be identical - the vendor name only exists to prevent naming clashes. For
+example, it would allow two different people to create a library named <code>json</code>.
+One might be named <code>igorw/json</code> while the other might be <code>seldaek/json</code>.</p>
+<p>Read more about publishing packages and package naming <a href="02-libraries.html">here</a>.
+(Note that you can also specify &quot;platform packages&quot; as dependencies, allowing
+you to require certain versions of server software. See
+<a href="#platform-packages">platform packages</a> below.)</p>
+<h3 id="package-version-constraints">Package version constraints</h3>
+<p>In our example, we are requesting the Monolog package with the version constraint
+<a href="https://semver.mwl.be/#?package=monolog%2Fmonolog&amp;version=1.0.*" target="_blank"><code>1.0.*</code></a>.
+This means any version in the <code>1.0</code> development branch, or any version that is
+greater than or equal to 1.0 and less than 1.1 (<code>&gt;=1.0 &lt;1.1</code>).</p>
+<p>Please read <a href="articles/versions.html">versions</a> for more in-depth information on
+versions, how versions relate to each other, and on version constraints.</p>
+<blockquote>
+<p><strong>How does Composer download the right files?</strong> When you specify a dependency in
+<code>composer.json</code>, Composer first takes the name of the package that you have requested
+and searches for it in any repositories that you have registered using the
+<a href="04-schema.html#repositories"><code>repositories</code></a> key. If you have not registered
+any extra repositories, or it does not find a package with that name in the
+repositories you have specified, it falls back to Packagist (more <a href="#packagist">below</a>).</p>
+<p>When Composer finds the right package, either in Packagist or in a repo you have specified,
+it then uses the versioning features of the package&apos;s VCS (i.e., branches and tags)
+to attempt to find the best match for the version constraint you have specified. Be sure to read
+about versions and package resolution in the <a href="articles/versions.html">versions article</a>.</p>
+<p><strong>Note:</strong> If you are trying to require a package but Composer throws an error
+regarding package stability, the version you have specified may not meet your
+default minimum stability requirements. By default, only stable releases are taken
+into consideration when searching for valid package versions in your VCS.</p>
+<p>You might run into this if you are trying to require dev, alpha, beta, or RC
+versions of a package. Read more about stability flags and the <code>minimum-stability</code>
+key on the <a href="04-schema.html">schema page</a>.</p>
+</blockquote>
+<h2 id="installing-dependencies">Installing dependencies</h2>
+<p>To install the defined dependencies for your project, run the
+<a href="03-cli.html#install-i"><code>install</code></a> command.</p>
+<pre class="language-"><code class="lang-sh">php composer.phar <span class="token function">install</span>
+</code></pre>
+<p>When you run this command, one of two things may happen:</p>
+<h3 id="installing-without-composerlock">Installing without <code>composer.lock</code></h3>
+<p>If you have never run the command before and there is also no <code>composer.lock</code> file present,
+Composer resolves all dependencies listed in your <code>composer.json</code> file and downloads
+the latest version of their files into the <code>vendor</code> directory in your project. (The <code>vendor</code>
+directory is the conventional location for all third-party code in a project). In our
+example from above, you would end up with the Monolog source files in
+<code>vendor/monolog/monolog/</code>. If Monolog listed any dependencies, those would also be in
+folders under <code>vendor/</code>.</p>
+<blockquote>
+<p><strong>Tip:</strong> If you are using git for your project, you probably want to add
+<code>vendor</code> in your <code>.gitignore</code>. You really don&apos;t want to add all of that
+third-party code to your versioned repository.</p>
+</blockquote>
+<p>When Composer has finished installing, it writes all of the packages and the exact versions
+of them that it downloaded to the <code>composer.lock</code> file, locking the project to those specific
+versions. You should commit the <code>composer.lock</code> file to your project repo so that all people
+working on the project are locked to the same versions of dependencies (more below).</p>
+<h3 id="installing-with-composerlock">Installing with <code>composer.lock</code></h3>
+<p>This brings us to the second scenario. If there is already a <code>composer.lock</code> file as well as a
+<code>composer.json</code> file when you run <code>composer install</code>, it means either you ran the
+<code>install</code> command before, or someone else on the project ran the <code>install</code> command and
+committed the <code>composer.lock</code> file to the project (which is good).</p>
+<p>Either way, running <code>install</code> when a <code>composer.lock</code> file is present resolves and installs
+all dependencies that you listed in <code>composer.json</code>, but Composer uses the exact versions listed
+in <code>composer.lock</code> to ensure that the package versions are consistent for everyone
+working on your project. As a result you will have all dependencies requested by your
+<code>composer.json</code> file, but they may not all be at the very latest available versions
+(some of the dependencies listed in the <code>composer.lock</code> file may have released newer versions since
+the file was created). This is by design, it ensures that your project does not break because of
+unexpected changes in dependencies.</p>
+<h3 id="commit-your-composerlock-file-to-version-control">Commit your <code>composer.lock</code> file to version control</h3>
+<p>Committing this file to VC is important because it will cause anyone who sets
+up the project to use the exact same
+versions of the dependencies that you are using. Your CI server, production
+machines, other developers in your team, everything and everyone runs on the
+same dependencies, which mitigates the potential for bugs affecting only some
+parts of the deployments. Even if you develop alone, in six months when
+reinstalling the project you can feel confident the dependencies installed are
+still working even if your dependencies released many new versions since then.
+(See note below about using the <code>update</code> command.)</p>
+<blockquote>
+<p><strong>Note:</strong> For libraries it is not necessary to commit the lock
+file, see also: <a href="02-libraries.html#lock-file">Libraries - Lock file</a>.</p>
+</blockquote>
+<h2 id="updating-dependencies-to-their-latest-versions">Updating dependencies to their latest versions</h2>
+<p>As mentioned above, the <code>composer.lock</code> file prevents you from automatically getting
+the latest versions of your dependencies. To update to the latest versions, use the
+<a href="03-cli.html#update-u"><code>update</code></a> command. This will fetch the latest matching
+versions (according to your <code>composer.json</code> file) and update the lock file
+with the new versions. (This is equivalent to deleting the <code>composer.lock</code> file
+and running <code>install</code> again.)</p>
+<pre class="language-"><code class="lang-sh">php composer.phar update
+</code></pre>
+<blockquote>
+<p><strong>Note:</strong> Composer will display a Warning when executing an <code>install</code> command
+if the <code>composer.lock</code> has not been updated since changes were made to the
+<code>composer.json</code> that might affect dependency resolution.</p>
+</blockquote>
+<p>If you only want to install, upgrade or remove one dependency, you can explicitly list it as an argument:</p>
+<pre class="language-"><code class="lang-sh">php composer.phar update monolog/monolog <span class="token punctuation">[</span><span class="token punctuation">..</span>.<span class="token punctuation">]</span>
+</code></pre>
+<h2 id="packagist">Packagist</h2>
+<p><a href="https://packagist.org/" target="_blank">Packagist</a> is the main Composer repository. A Composer
+repository is basically a package source: a place where you can get packages
+from. Packagist aims to be the central repository that everybody uses. This
+means that you can automatically <code>require</code> any package that is available there,
+without further specifying where Composer should look for the package.</p>
+<p>If you go to the <a href="https://packagist.org/" target="_blank">Packagist website</a> (packagist.org),
+you can browse and search for packages.</p>
+<p>Any open source project using Composer is recommended to publish their packages
+on Packagist. A library does not need to be on Packagist to be used by Composer,
+but it enables discovery and adoption by other developers more quickly.</p>
+<h2 id="platform-packages">Platform packages</h2>
+<p>Composer has platform packages, which are virtual packages for things that are
+installed on the system but are not actually installable by Composer. This
+includes PHP itself, PHP extensions and some system libraries.</p>
+<ul>
+<li><p><code>php</code> represents the PHP version of the user, allowing you to apply
+constraints, e.g. <code>^7.1</code>. To require a 64bit version of php, you can
+require the <code>php-64bit</code> package.</p>
+</li>
+<li><p><code>hhvm</code> represents the version of the HHVM runtime and allows you to apply
+a constraint, e.g., <code>^2.3</code>.</p>
+</li>
+<li><p><code>ext-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>name</span><span class="token punctuation">&gt;</span></span></code> allows you to require PHP extensions (includes core
+extensions). Versioning can be quite inconsistent here, so it&apos;s often
+a good idea to set the constraint to <code>*</code>.  An example of an extension
+package name is <code>ext-gd</code>.</p>
+</li>
+<li><p><code>lib-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>name</span><span class="token punctuation">&gt;</span></span></code> allows constraints to be made on versions of libraries used by
+PHP. The following are available: <code>curl</code>, <code>iconv</code>, <code>icu</code>, <code>libxml</code>,
+<code>openssl</code>, <code>pcre</code>, <code>uuid</code>, <code>xsl</code>.</p>
+</li>
+</ul>
+<p>You can use <a href="03-cli.html#show"><code>show --platform</code></a> to get a list of your locally
+available platform packages.</p>
+<h2 id="autoloading">Autoloading</h2>
+<p>For libraries that specify autoload information, Composer generates a
+<code>vendor/autoload.php</code> file. You can include this file and start
+using the classes that those libraries provide without any extra work:</p>
+<pre class="language-"><code class="lang-php"><span class="token keyword">require</span> <span class="token constant">__DIR__</span> <span class="token punctuation">.</span> <span class="token single-quoted-string string">&apos;/vendor/autoload.php&apos;</span><span class="token punctuation">;</span>
+
+<span class="token variable">$log</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Monolog<span class="token punctuation">\</span>Logger</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;name&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$log</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">pushHandler</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Monolog<span class="token punctuation">\</span>Handler<span class="token punctuation">\</span>StreamHandler</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;app.log&apos;</span><span class="token punctuation">,</span> Monolog\<span class="token package">Logger</span><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token constant">WARNING</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$log</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">addWarning</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;Foo&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>You can even add your own code to the autoloader by adding an
+<a href="04-schema.html#autoload"><code>autoload</code></a> field to <code>composer.json</code>.</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;autoload&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;psr-4&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token property">&quot;Acme\\&quot;</span><span class="token operator">:</span> <span class="token string">&quot;src/&quot;</span><span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Composer will register a <a href="https://www.php-fig.org/psr/psr-4/" target="_blank">PSR-4</a> autoloader
+for the <code>Acme</code> namespace.</p>
+<p>You define a mapping from namespaces to directories. The <code>src</code> directory would
+be in your project root, on the same level as <code>vendor</code> directory is. An example
+filename would be <code>src/Foo.php</code> containing an <code>Acme\Foo</code> class.</p>
+<p>After adding the <a href="04-schema.html#autoload"><code>autoload</code></a> field, you have to re-run
+this command:</p>
+<pre class="language-"><code class="lang-sh">php composer.phar dump-autoload
+</code></pre>
+<p>This command will re-generate the <code>vendor/autoload.php</code> file.
+See the <a href="03-cli.html#dump-autoload-dumpautoload-"><code>dump-autoload</code></a> section for
+more information.</p>
+<p>Including that file will also return the autoloader instance, so you can store
+the return value of the include call in a variable and add more namespaces.
+This can be useful for autoloading classes in a test suite, for example.</p>
+<pre class="language-"><code class="lang-php"><span class="token variable">$loader</span> <span class="token operator">=</span> <span class="token keyword">require</span> <span class="token constant">__DIR__</span> <span class="token punctuation">.</span> <span class="token single-quoted-string string">&apos;/vendor/autoload.php&apos;</span><span class="token punctuation">;</span>
+<span class="token variable">$loader</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">addPsr4</span><span class="token punctuation">(</span><span class="token single-quoted-string string">&apos;Acme\\Test\\&apos;</span><span class="token punctuation">,</span> <span class="token constant">__DIR__</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>In addition to PSR-4 autoloading, Composer also supports PSR-0, classmap and
+files autoloading. See the <a href="04-schema.html#autoload"><code>autoload</code></a> reference for
+more information.</p>
+<p>See also the docs on <a href="articles/autoloader-optimization.html">optimizing the autoloader</a>.</p>
+<blockquote>
+<p><strong>Note:</strong> Composer provides its own autoloader. If you don&apos;t want to use that
+one, you can include <code>vendor/composer/autoload_*.php</code> files, which return
+associative arrays allowing you to configure your own autoloader.</p>
+</blockquote>
+<p>&#x2190; <a href="00-intro.md">Intro</a>  |  <a href="02-libraries.html">Libraries</a> &#x2192;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="fixtures/fixtures.html" class="navigation navigation-prev " aria-label="Previous page: Fixtures">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="02-libraries.html" class="navigation navigation-next " aria-label="Next page: 02 Libraries">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"01 Basic Usage","level":"1.6","depth":1,"next":{"title":"02 Libraries","level":"1.7","depth":1,"path":"02-libraries.md","ref":"02-libraries.md","articles":[]},"previous":{"title":"Fixtures","level":"1.5","depth":1,"path":"fixtures/fixtures.md","ref":"fixtures/fixtures.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-highlight","-livereload","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Composer 英文文档","language":"us-en","links":{"sidebar":{"Home":"https://docs.khs1994.com"}},"gitbook":"*"},"file":{"path":"01-basic-usage.md","mtime":"2021-02-26T00:11:44.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-26T00:12:20.506Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

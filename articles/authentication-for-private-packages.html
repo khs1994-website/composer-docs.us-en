@@ -1,0 +1,925 @@
+
+<!DOCTYPE HTML>
+<html lang="us-en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Authentication For Private Packages · Composer 英文文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="autoloader-optimization.html" />
+    
+    
+    <link rel="prev" href="aliases.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://docs.khs1994.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Articles
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="aliases.html">
+            
+                <a href="aliases.html">
+            
+                    
+                    Aliases
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2" data-path="authentication-for-private-packages.html">
+            
+                <a href="authentication-for-private-packages.html">
+            
+                    
+                    Authentication For Private Packages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="autoloader-optimization.html">
+            
+                <a href="autoloader-optimization.html">
+            
+                    
+                    Autoloader Optimization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="custom-installers.html">
+            
+                <a href="custom-installers.html">
+            
+                    
+                    Custom Installers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="handling-private-packages.html">
+            
+                <a href="handling-private-packages.html">
+            
+                    
+                    Handling Private Packages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="plugins.html">
+            
+                <a href="plugins.html">
+            
+                    
+                    Plugins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="repository-priorities.html">
+            
+                <a href="repository-priorities.html">
+            
+                    
+                    Repository Priorities
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="resolving-merge-conflicts.html">
+            
+                <a href="resolving-merge-conflicts.html">
+            
+                    
+                    Resolving Merge Conflicts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="scripts.html">
+            
+                <a href="scripts.html">
+            
+                    
+                    Scripts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="troubleshooting.html">
+            
+                <a href="troubleshooting.html">
+            
+                    
+                    Troubleshooting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="vendor-binaries.html">
+            
+                <a href="vendor-binaries.html">
+            
+                    
+                    Vendor Binaries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="versions.html">
+            
+                <a href="versions.html">
+            
+                    
+                    Versions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Dev
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../dev/DefaultPolicy.html">
+            
+                <a href="../dev/DefaultPolicy.html">
+            
+                    
+                    Default Policy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Faqs
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../faqs/how-do-i-install-a-package-to-a-custom-path-for-my-framework.html">
+            
+                <a href="../faqs/how-do-i-install-a-package-to-a-custom-path-for-my-framework.html">
+            
+                    
+                    How Do I Install A Package To A Custom Path For My Framework
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../faqs/how-to-install-composer-programmatically.html">
+            
+                <a href="../faqs/how-to-install-composer-programmatically.html">
+            
+                    
+                    How To Install Composer Programmatically
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../faqs/how-to-install-untrusted-packages-safely.html">
+            
+                <a href="../faqs/how-to-install-untrusted-packages-safely.html">
+            
+                    
+                    How To Install Untrusted Packages Safely
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../faqs/should-i-commit-the-dependencies-in-my-vendor-directory.html">
+            
+                <a href="../faqs/should-i-commit-the-dependencies-in-my-vendor-directory.html">
+            
+                    
+                    Should I Commit The Dependencies In My Vendor Directory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../faqs/which-version-numbering-system-does-composer-itself-use.html">
+            
+                <a href="../faqs/which-version-numbering-system-does-composer-itself-use.html">
+            
+                    
+                    Which Version Numbering System Does Composer Itself Use
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../faqs/why-are-unbound-version-constraints-a-bad-idea.html">
+            
+                <a href="../faqs/why-are-unbound-version-constraints-a-bad-idea.html">
+            
+                    
+                    Why Are Unbound Version Constraints A Bad Idea
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../faqs/why-are-version-constraints-combining-comparisons-and-wildcards-a-bad-idea.html">
+            
+                <a href="../faqs/why-are-version-constraints-combining-comparisons-and-wildcards-a-bad-idea.html">
+            
+                    
+                    Why Are Version Constraints Combining Comparisons And Wildcards A Bad Idea
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../faqs/why-can't-composer-load-repositories-recursively.html">
+            
+                <a href="../faqs/why-can't-composer-load-repositories-recursively.html">
+            
+                    
+                    Why Can T Composer Load Repositories Recursively
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../fixtures/fixtures.html">
+            
+                <a href="../fixtures/fixtures.html">
+            
+                    
+                    Fixtures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../01-basic-usage.html">
+            
+                <a href="../01-basic-usage.html">
+            
+                    
+                    01 Basic Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../02-libraries.html">
+            
+                <a href="../02-libraries.html">
+            
+                    
+                    02 Libraries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../03-cli.html">
+            
+                <a href="../03-cli.html">
+            
+                    
+                    03 Cli
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../04-schema.html">
+            
+                <a href="../04-schema.html">
+            
+                    
+                    04 Schema
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../05-repositories.html">
+            
+                <a href="../05-repositories.html">
+            
+                    
+                    05 Repositories
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../06-config.html">
+            
+                <a href="../06-config.html">
+            
+                    
+                    06 Config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../07-runtime.html">
+            
+                <a href="../07-runtime.html">
+            
+                    
+                    07 Runtime
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../08-community.html">
+            
+                <a href="../08-community.html">
+            
+                    
+                    08 Community
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Authentication For Private Packages</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <!--
+    tagline: Access privately hosted packages/repositories
+-->
+<h1 id="authentication-for-privately-hosted-packages-and-repositories">Authentication for privately hosted packages and repositories</h1>
+<p>Your <a href="handling-private-packages.html">private package server</a> or version control system is probably secured with one
+or more authentication options. In order to allow your project to have access to these
+packages and repositories you will have to tell Composer how to authenticate with the server that hosts them.</p>
+<h1 id="authentication-principles">Authentication principles</h1>
+<p>Whenever Composer encounters a protected Composer repository it will try to authenticate
+using already defined credentials first. When none of those credentials apply it will prompt
+for credentials and save them (or a token if Composer is able to retrieve one).</p>
+<table>
+<thead>
+<tr>
+<th>type</th>
+<th>Generated by Prompt?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#http-basic">http-basic</a></td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="#inline-http-basic">Inline http-basic</a></td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="#custom-token-authentication">Custom header</a></td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="#gitlab-oauth">gitlab-oauth</a></td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="#gitlab-token">gitlab-token</a></td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="#github-oauth">github-oauth</a></td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="#bitbucket-oauth">bitbucket-oauth</a></td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+<p>Sometimes automatic authentication is not possible, or you may want to predefine
+authentication credentials.</p>
+<p>Credentials can be stored on 3 different places; in an <code>auth.json</code> for the project, a global
+<code>auth.json</code> or in the <code>composer.json</code> itself.</p>
+<h2 id="authentication-in-authjson-per-project">Authentication in auth.json per project</h2>
+<p>In this authentication storage method, an <code>auth.json</code> file will be present in the same folder
+as the projects&apos; <code>composer.json</code> file. You can either create and edit this file using the
+command line or manually edit or create it.</p>
+<blockquote>
+<p><strong>Note: Make sure the <code>auth.json</code> file is in <code>.gitignore</code></strong> to avoid
+leaking credentials into your git history.</p>
+</blockquote>
+<h2 id="global-authentication-credentials">Global authentication credentials</h2>
+<p>If you don&apos;t want to supply credentials for every project you work on, storing your credentials
+globally might be a better idea. These credentials are stored in a global <code>auth.json</code> in your
+Composer home directory.</p>
+<h3 id="command-line-global-credential-editing">Command line global credential editing</h3>
+<p>For all authentication methods it is possible to edit them using the command line;</p>
+<ul>
+<li><a href="#command-line-http-basic">http-basic</a></li>
+<li><a href="#command-line-inline-http-basic">Inline http-basic</a></li>
+<li><a href="#command-line-gitlab-oauth">gitlab-oauth</a></li>
+<li><a href="#command-line-gitlab-token">gitlab-token</a></li>
+<li><a href="#command-line-github-oauth">github-oauth</a></li>
+<li><a href="#command-line-bitbucket-oauth">bitbucket-oauth</a></li>
+</ul>
+<h3 id="manually-editing-global-authentication-credentials">Manually editing global authentication credentials</h3>
+<blockquote>
+<p><strong>Note:</strong> It is not recommended to manually edit your authentication options as this might
+result in invalid json. Instead preferably use <a href="#command-line-global-credential-editing">the command line</a>.</p>
+</blockquote>
+<p>To manually edit it, run:</p>
+<pre class="language-"><code class="lang-sh">composer config --global --editor <span class="token punctuation">[</span>--auth<span class="token punctuation">]</span>
+</code></pre>
+<p>For specific authentication implementations, see their sections;</p>
+<ul>
+<li><a href="#manual-http-basic">http-basic</a></li>
+<li><a href="#manual-inline-http-basic">Inline http-basic</a></li>
+<li><a href="#manual-custom-token-authentication">custom header</a></li>
+<li><a href="#manual-gitlab-oauth">gitlab-oauth</a></li>
+<li><a href="#manual-gitlab-token">gitlab-token</a></li>
+<li><a href="#manual-github-oauth">github-oauth</a></li>
+<li><a href="#manual-bitbucket-oauth">bitbucket-oauth</a></li>
+</ul>
+<p>Manually editing this file instead of using the command line may result in invalid json errors.
+To fix this you need to open the file in an editor and fix the error. To find the location of
+your global <code>auth.json</code>, execute:</p>
+<pre class="language-"><code class="lang-sh">composer config --global home
+</code></pre>
+<p>The folder will contain your global <code>auth.json</code> if it exists.</p>
+<p>You can open this file in your favorite editor and fix the error.</p>
+<h2 id="authentication-in-composerjson-file-itself">Authentication in composer.json file itself</h2>
+<blockquote>
+<p><strong>Note:</strong> <strong>This is not recommended</strong> as these credentials are visible
+to anyone who has access to the composer.json, either when it is shared through
+a version control system like git or when an attacker gains (read) access to
+your production server files.</p>
+</blockquote>
+<p>It is also possible to add credentials to a <code>composer.json</code> on a per-project basis in the <code>config</code>
+section or directly in the repository definition.</p>
+<h2 id="authentication-using-the-composerauth-environment-variable">Authentication using the COMPOSER_AUTH environment variable</h2>
+<blockquote>
+<p><strong>Note:</strong> Using the command line environment variable method also has security implications.
+These credentials will most likely be stored in memory,
+and on be persisted to a file like <code>~/.bash_history</code>(linux) or <code>ConsoleHost_history.txt</code>
+(PowerShell on Windows) when closing a session.</p>
+</blockquote>
+<p>The final option to supply Composer with credentials is to use the <code>COMPOSER_AUTH</code> environment variable.
+These variables can be either passed as command line variables or set in actual environment variables.
+Read more about the usage of this environment variable <a href="../03-cli.html#composer-auth">here</a>.</p>
+<h1 id="authentication-methods">Authentication methods</h1>
+<h2 id="http-basic">http-basic</h2>
+<h3 id="command-line-http-basic">Command line http-basic</h3>
+<pre class="language-"><code class="lang-sh">composer config <span class="token punctuation">[</span>--global<span class="token punctuation">]</span> http-basic.example.org username password
+</code></pre>
+<h3 id="manual-http-basic">Manual http-basic</h3>
+<pre class="language-"><code class="lang-sh">composer config <span class="token punctuation">[</span>--global<span class="token punctuation">]</span> --editor --auth
+</code></pre>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;http-basic&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;example.org&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;username&quot;</span><span class="token operator">:</span> <span class="token string">&quot;username&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;password&quot;</span><span class="token operator">:</span> <span class="token string">&quot;password&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="inline-http-basic">Inline http-basic</h2>
+<p>For the inline http-basic authentication method the credentials are not stored in a separate
+<code>auth.json</code> in the project or globally, but in the <code>composer.json</code> or global configuration
+in the same place where the Composer repository definition is defined.</p>
+<p>Make sure that the username and password are encoded according to <a href="http://www.faqs.org/rfcs/rfc3986.html" target="_blank">RFC 3986</a> (2.1. Percent-Encoding).
+If the username e.g. is an email address it needs to be passed as <code>name%40example.com</code>.</p>
+<h3 id="command-line-inline-http-basic">Command line inline http-basic</h3>
+<pre class="language-"><code class="lang-sh">composer config <span class="token punctuation">[</span>--global<span class="token punctuation">]</span> repositories composer.unique-name https://username:password@repo.example.org
+</code></pre>
+<h3 id="manual-inline-http-basic">Manual inline http-basic</h3>
+<pre class="language-"><code class="lang-sh">composer config <span class="token punctuation">[</span>--global<span class="token punctuation">]</span> --editor
+</code></pre>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;repositories&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;composer&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://username:password@example.org&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="custom-token-authentication">Custom token authentication</h2>
+<h3 id="manual-custom-token-authentication">Manual custom token authentication</h3>
+<pre class="language-"><code class="lang-sh">composer config <span class="token punctuation">[</span>--global<span class="token punctuation">]</span> --editor
+</code></pre>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;repositories&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;composer&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://example.org&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;options&quot;</span><span class="token operator">:</span>  <span class="token punctuation">{</span>
+              <span class="token property">&quot;http&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token property">&quot;header&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                  <span class="token string">&quot;API-TOKEN: YOUR-API-TOKEN&quot;</span>
+                <span class="token punctuation">]</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="gitlab-oauth">gitlab-oauth</h2>
+<blockquote>
+<p><strong>Note:</strong> For the gitlab authentication to work on private gitlab instances, the
+<a href="../06-config.html#gitlab-domains"><code>gitlab-domains</code></a> section should also contain the url.</p>
+</blockquote>
+<h3 id="command-line-gitlab-oauth">Command line gitlab-oauth</h3>
+<pre class="language-"><code class="lang-sh">composer config <span class="token punctuation">[</span>--global<span class="token punctuation">]</span> gitlab-oauth.example.org token
+</code></pre>
+<h3 id="manual-gitlab-oauth">Manual gitlab-oauth</h3>
+<pre class="language-"><code class="lang-sh">composer config <span class="token punctuation">[</span>--global<span class="token punctuation">]</span> --editor --auth
+</code></pre>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;gitlab-oauth&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;example.org&quot;</span><span class="token operator">:</span> <span class="token string">&quot;token&quot;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="gitlab-token">gitlab-token</h2>
+<blockquote>
+<p><strong>Note:</strong> For the gitlab authentication to work on private gitlab instances, the
+<a href="../06-config.html#gitlab-domains"><code>gitlab-domains</code></a> section should also contain the url.</p>
+</blockquote>
+<p>When creating a gitlab token manually, make sure it has either the <code>read_api</code> or <code>api</code> scope.</p>
+<h3 id="command-line-gitlab-token">Command line gitlab-token</h3>
+<pre class="language-"><code class="lang-sh">composer config <span class="token punctuation">[</span>--global<span class="token punctuation">]</span> gitlab-token.example.org token
+</code></pre>
+<h3 id="manual-gitlab-token">Manual gitlab-token</h3>
+<pre class="language-"><code class="lang-sh">composer config <span class="token punctuation">[</span>--global<span class="token punctuation">]</span> --editor --auth
+</code></pre>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;gitlab-token&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;example.org&quot;</span><span class="token operator">:</span> <span class="token string">&quot;token&quot;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="github-oauth">github-oauth</h2>
+<p>To create a new access token, head to your <a href="https://github.com/settings/tokens" target="_blank">token settings section on Github</a> and <a href="https://github.com/settings/tokens/new" target="_blank">generate a new token</a>. For public repositories when rate limited, the <code>public_repo</code> scope is required, for private repositories the <code>repo:status</code> scope is needed.
+Read more about it <a href="https://github.com/blog/1509-personal-api-tokens" target="_blank">here</a>.</p>
+<h3 id="command-line-github-oauth">Command line github-oauth</h3>
+<pre class="language-"><code class="lang-sh">composer config <span class="token punctuation">[</span>--global<span class="token punctuation">]</span> github-oauth.github.com token
+</code></pre>
+<h3 id="manual-github-oauth">Manual github-oauth</h3>
+<pre class="language-"><code class="lang-sh">composer config <span class="token punctuation">[</span>--global<span class="token punctuation">]</span> --editor --auth
+</code></pre>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;github-oauth&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;github.com&quot;</span><span class="token operator">:</span> <span class="token string">&quot;token&quot;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="bitbucket-oauth">bitbucket-oauth</h2>
+<p>The BitBucket driver uses OAuth to access your private repositories via the BitBucket REST APIs, and you will need to create an OAuth consumer to use the driver, please refer to <a href="https://support.atlassian.com/bitbucket-cloud/docs/use-oauth-on-bitbucket-cloud/" target="_blank">Atlassian&apos;s Documentation</a>. You will need to fill the callback url with something to satisfy BitBucket, but the address does not need to go anywhere and is not used by Composer.</p>
+<h3 id="command-line-bitbucket-oauth">Command line bitbucket-oauth</h3>
+<pre class="language-"><code class="lang-sh">composer config <span class="token punctuation">[</span>--global<span class="token punctuation">]</span> bitbucket-oauth.bitbucket.org consumer-key consumer-secret
+</code></pre>
+<h3 id="manual-bitbucket-oauth">Manual bitbucket-oauth</h3>
+<pre class="language-"><code class="lang-sh">composer config <span class="token punctuation">[</span>--global<span class="token punctuation">]</span> --editor --auth
+</code></pre>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;bitbucket-oauth&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;bitbucket.org&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+             <span class="token property">&quot;consumer-key&quot;</span><span class="token operator">:</span> <span class="token string">&quot;key&quot;</span><span class="token punctuation">,</span>
+             <span class="token property">&quot;consumer-secret&quot;</span><span class="token operator">:</span> <span class="token string">&quot;secret&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="aliases.html" class="navigation navigation-prev " aria-label="Previous page: Aliases">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="autoloader-optimization.html" class="navigation navigation-next " aria-label="Next page: Autoloader Optimization">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Authentication For Private Packages","level":"1.2.2","depth":2,"next":{"title":"Autoloader Optimization","level":"1.2.3","depth":2,"path":"articles/autoloader-optimization.md","ref":"articles/autoloader-optimization.md","articles":[]},"previous":{"title":"Aliases","level":"1.2.1","depth":2,"path":"articles/aliases.md","ref":"articles/aliases.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-highlight","-livereload","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Composer 英文文档","language":"us-en","links":{"sidebar":{"Home":"https://docs.khs1994.com"}},"gitbook":"*"},"file":{"path":"articles/authentication-for-private-packages.md","mtime":"2021-02-26T00:11:44.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-26T00:12:20.506Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

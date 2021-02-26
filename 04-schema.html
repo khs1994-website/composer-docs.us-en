@@ -1,0 +1,1426 @@
+
+<!DOCTYPE HTML>
+<html lang="us-en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>04 Schema · Composer 英文文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="05-repositories.html" />
+    
+    
+    <link rel="prev" href="03-cli.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://docs.khs1994.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Articles
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="articles/aliases.html">
+            
+                <a href="articles/aliases.html">
+            
+                    
+                    Aliases
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="articles/authentication-for-private-packages.html">
+            
+                <a href="articles/authentication-for-private-packages.html">
+            
+                    
+                    Authentication For Private Packages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="articles/autoloader-optimization.html">
+            
+                <a href="articles/autoloader-optimization.html">
+            
+                    
+                    Autoloader Optimization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="articles/custom-installers.html">
+            
+                <a href="articles/custom-installers.html">
+            
+                    
+                    Custom Installers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="articles/handling-private-packages.html">
+            
+                <a href="articles/handling-private-packages.html">
+            
+                    
+                    Handling Private Packages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="articles/plugins.html">
+            
+                <a href="articles/plugins.html">
+            
+                    
+                    Plugins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="articles/repository-priorities.html">
+            
+                <a href="articles/repository-priorities.html">
+            
+                    
+                    Repository Priorities
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="articles/resolving-merge-conflicts.html">
+            
+                <a href="articles/resolving-merge-conflicts.html">
+            
+                    
+                    Resolving Merge Conflicts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="articles/scripts.html">
+            
+                <a href="articles/scripts.html">
+            
+                    
+                    Scripts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="articles/troubleshooting.html">
+            
+                <a href="articles/troubleshooting.html">
+            
+                    
+                    Troubleshooting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="articles/vendor-binaries.html">
+            
+                <a href="articles/vendor-binaries.html">
+            
+                    
+                    Vendor Binaries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="articles/versions.html">
+            
+                <a href="articles/versions.html">
+            
+                    
+                    Versions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Dev
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="dev/DefaultPolicy.html">
+            
+                <a href="dev/DefaultPolicy.html">
+            
+                    
+                    Default Policy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Faqs
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="faqs/how-do-i-install-a-package-to-a-custom-path-for-my-framework.html">
+            
+                <a href="faqs/how-do-i-install-a-package-to-a-custom-path-for-my-framework.html">
+            
+                    
+                    How Do I Install A Package To A Custom Path For My Framework
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="faqs/how-to-install-composer-programmatically.html">
+            
+                <a href="faqs/how-to-install-composer-programmatically.html">
+            
+                    
+                    How To Install Composer Programmatically
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="faqs/how-to-install-untrusted-packages-safely.html">
+            
+                <a href="faqs/how-to-install-untrusted-packages-safely.html">
+            
+                    
+                    How To Install Untrusted Packages Safely
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="faqs/should-i-commit-the-dependencies-in-my-vendor-directory.html">
+            
+                <a href="faqs/should-i-commit-the-dependencies-in-my-vendor-directory.html">
+            
+                    
+                    Should I Commit The Dependencies In My Vendor Directory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="faqs/which-version-numbering-system-does-composer-itself-use.html">
+            
+                <a href="faqs/which-version-numbering-system-does-composer-itself-use.html">
+            
+                    
+                    Which Version Numbering System Does Composer Itself Use
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="faqs/why-are-unbound-version-constraints-a-bad-idea.html">
+            
+                <a href="faqs/why-are-unbound-version-constraints-a-bad-idea.html">
+            
+                    
+                    Why Are Unbound Version Constraints A Bad Idea
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="faqs/why-are-version-constraints-combining-comparisons-and-wildcards-a-bad-idea.html">
+            
+                <a href="faqs/why-are-version-constraints-combining-comparisons-and-wildcards-a-bad-idea.html">
+            
+                    
+                    Why Are Version Constraints Combining Comparisons And Wildcards A Bad Idea
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="faqs/why-can't-composer-load-repositories-recursively.html">
+            
+                <a href="faqs/why-can't-composer-load-repositories-recursively.html">
+            
+                    
+                    Why Can T Composer Load Repositories Recursively
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="fixtures/fixtures.html">
+            
+                <a href="fixtures/fixtures.html">
+            
+                    
+                    Fixtures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="01-basic-usage.html">
+            
+                <a href="01-basic-usage.html">
+            
+                    
+                    01 Basic Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="02-libraries.html">
+            
+                <a href="02-libraries.html">
+            
+                    
+                    02 Libraries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="03-cli.html">
+            
+                <a href="03-cli.html">
+            
+                    
+                    03 Cli
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9" data-path="04-schema.html">
+            
+                <a href="04-schema.html">
+            
+                    
+                    04 Schema
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="05-repositories.html">
+            
+                <a href="05-repositories.html">
+            
+                    
+                    05 Repositories
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="06-config.html">
+            
+                <a href="06-config.html">
+            
+                    
+                    06 Config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="07-runtime.html">
+            
+                <a href="07-runtime.html">
+            
+                    
+                    07 Runtime
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="08-community.html">
+            
+                <a href="08-community.html">
+            
+                    
+                    08 Community
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >04 Schema</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="the-composerjson-schema">The composer.json schema</h1>
+<p>This chapter will explain all of the fields available in <code>composer.json</code>.</p>
+<h2 id="json-schema">JSON schema</h2>
+<p>We have a <a href="https://json-schema.org" target="_blank">JSON schema</a> that documents the format and
+can also be used to validate your <code>composer.json</code>. In fact, it is used by the
+<code>validate</code> command. You can find it at: <a href="https://getcomposer.org/schema.json" target="_blank">https://getcomposer.org/schema.json</a></p>
+<h2 id="root-package">Root Package</h2>
+<p>The root package is the package defined by the <code>composer.json</code> at the root of
+your project. It is the main <code>composer.json</code> that defines your project
+requirements.</p>
+<p>Certain fields only apply when in the root package context. One example of
+this is the <code>config</code> field. Only the root package can define configuration.
+The config of dependencies is ignored. This makes the <code>config</code> field
+<code>root-only</code>.</p>
+<blockquote>
+<p><strong>Note:</strong> A package can be the root package or not, depending on the context.
+For example, if your project depends on the <code>monolog</code> library, your project
+is the root package. However, if you clone <code>monolog</code> from GitHub in order to
+fix a bug in it, then <code>monolog</code> is the root package.</p>
+</blockquote>
+<h2 id="properties">Properties</h2>
+<h3 id="name">name</h3>
+<p>The name of the package. It consists of vendor name and project name,
+separated by <code>/</code>. Examples:</p>
+<ul>
+<li>monolog/monolog</li>
+<li>igorw/event-source</li>
+</ul>
+<p>The name must be lowercased and consist of words separated by <code>-</code>, <code>.</code> or <code>_</code>.
+The complete name should match <code>^[a-z0-9]([_.-]?[a-z0-9]+)*/[a-z0-9](([_.]?|-{0,2})[a-z0-9]+)*$</code>.</p>
+<p>The <code>name</code> property is required for published packages (libraries).</p>
+<blockquote>
+<p><strong>Note:</strong> Before Composer version 2.0, a name could contain any character, including white spaces.</p>
+</blockquote>
+<h3 id="description">description</h3>
+<p>A short description of the package. Usually this is one line long.</p>
+<p>Required for published packages (libraries).</p>
+<h3 id="version">version</h3>
+<p>The version of the package. In most cases this is not required and should
+be omitted (see below).</p>
+<p>This must follow the format of <code>X.Y.Z</code> or <code>vX.Y.Z</code> with an optional suffix
+of <code>-dev</code>, <code>-patch</code> (<code>-p</code>), <code>-alpha</code> (<code>-a</code>), <code>-beta</code> (<code>-b</code>) or <code>-RC</code>.
+The patch, alpha, beta and RC suffixes can also be followed by a number.</p>
+<p>Examples:</p>
+<ul>
+<li>1.0.0</li>
+<li>1.0.2</li>
+<li>1.1.0</li>
+<li>0.2.5</li>
+<li>1.0.0-dev</li>
+<li>1.0.0-alpha3</li>
+<li>1.0.0-beta2</li>
+<li>1.0.0-RC5</li>
+<li>v2.0.4-p1</li>
+</ul>
+<p>Optional if the package repository can infer the version from somewhere, such
+as the VCS tag name in the VCS repository. In that case it is also recommended
+to omit it.</p>
+<blockquote>
+<p><strong>Note:</strong> Packagist uses VCS repositories, so the statement above is very
+much true for Packagist as well. Specifying the version yourself will
+most likely end up creating problems at some point due to human error.</p>
+</blockquote>
+<h3 id="type">type</h3>
+<p>The type of the package. It defaults to <code>library</code>.</p>
+<p>Package types are used for custom installation logic. If you have a package
+that needs some special logic, you can define a custom type. This could be a
+<code>symfony-bundle</code>, a <code>wordpress-plugin</code> or a <code>typo3-cms-extension</code>. These types
+will all be specific to certain projects, and they will need to provide an
+installer capable of installing packages of that type.</p>
+<p>Out of the box, Composer supports four types:</p>
+<ul>
+<li><strong>library:</strong> This is the default. It will copy the files to <code>vendor</code>.</li>
+<li><strong>project:</strong> This denotes a project rather than a library. For example
+application shells like the <a href="https://github.com/symfony/symfony-standard" target="_blank">Symfony standard edition</a>,
+CMSs like the <a href="https://github.com/silverstripe/silverstripe-installer" target="_blank">SilverStripe installer</a>
+or full fledged applications distributed as packages. This can for example
+be used by IDEs to provide listings of projects to initialize when creating
+a new workspace.</li>
+<li><strong>metapackage:</strong> An empty package that contains requirements and will trigger
+their installation, but contains no files and will not write anything to the
+filesystem. As such, it does not require a dist or source key to be
+installable.</li>
+<li><strong>composer-plugin:</strong> A package of type <code>composer-plugin</code> may provide an
+installer for other packages that have a custom type. Read more in the
+<a href="articles/custom-installers.html">dedicated article</a>.</li>
+</ul>
+<p>Only use a custom type if you need custom logic during installation. It is
+recommended to omit this field and have it default to <code>library</code>.</p>
+<h3 id="keywords">keywords</h3>
+<p>An array of keywords that the package is related to. These can be used for
+searching and filtering.</p>
+<p>Examples:</p>
+<ul>
+<li>logging</li>
+<li>events</li>
+<li>database</li>
+<li>redis</li>
+<li>templating</li>
+</ul>
+<p>Optional.</p>
+<h3 id="homepage">homepage</h3>
+<p>A URL to the website of the project.</p>
+<p>Optional.</p>
+<h3 id="readme">readme</h3>
+<p>A relative path to the readme document.</p>
+<p>Optional.</p>
+<h3 id="time">time</h3>
+<p>Release date of the version.</p>
+<p>Must be in <code>YYYY-MM-DD</code> or <code>YYYY-MM-DD HH:MM:SS</code> format.</p>
+<p>Optional.</p>
+<h3 id="license">license</h3>
+<p>The license of the package. This can be either a string or an array of strings.</p>
+<p>The recommended notation for the most common licenses is (alphabetical):</p>
+<ul>
+<li>Apache-2.0</li>
+<li>BSD-2-Clause</li>
+<li>BSD-3-Clause</li>
+<li>BSD-4-Clause</li>
+<li>GPL-2.0-only / GPL-2.0-or-later</li>
+<li>GPL-3.0-only / GPL-3.0-or-later</li>
+<li>LGPL-2.1-only / LGPL-2.1-or-later</li>
+<li>LGPL-3.0-only / LGPL-3.0-or-later</li>
+<li>MIT</li>
+</ul>
+<p>Optional, but it is highly recommended to supply this. More identifiers are
+listed at the <a href="https://spdx.org/licenses/" target="_blank">SPDX Open Source License Registry</a>.</p>
+<p>For closed-source software, you may use <code>&quot;proprietary&quot;</code> as the license identifier.</p>
+<p>An Example:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;license&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MIT&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>For a package, when there is a choice between licenses (&quot;disjunctive license&quot;),
+multiple can be specified as array.</p>
+<p>An Example for disjunctive licenses:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;license&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+       <span class="token string">&quot;LGPL-2.1-only&quot;</span><span class="token punctuation">,</span>
+       <span class="token string">&quot;GPL-3.0-or-later&quot;</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Alternatively they can be separated with &quot;or&quot; and enclosed in parentheses;</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;license&quot;</span><span class="token operator">:</span> <span class="token string">&quot;(LGPL-2.1-only or GPL-3.0-or-later)&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Similarly, when multiple licenses need to be applied (&quot;conjunctive license&quot;),
+they should be separated with &quot;and&quot; and enclosed in parentheses.</p>
+<h3 id="authors">authors</h3>
+<p>The authors of the package. This is an array of objects.</p>
+<p>Each author object can have following properties:</p>
+<ul>
+<li><strong>name:</strong> The author&apos;s name. Usually their real name.</li>
+<li><strong>email:</strong> The author&apos;s email address.</li>
+<li><strong>homepage:</strong> An URL to the author&apos;s website.</li>
+<li><strong>role:</strong> The author&apos;s role in the project (e.g. developer or translator)</li>
+</ul>
+<p>An example:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;authors&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Nils Adermann&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;email&quot;</span><span class="token operator">:</span> <span class="token string">&quot;naderman@naderman.de&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;homepage&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://www.naderman.de&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;role&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Developer&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Jordi Boggiano&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;email&quot;</span><span class="token operator">:</span> <span class="token string">&quot;j.boggiano@seld.be&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;homepage&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://seld.be&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;role&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Developer&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Optional, but highly recommended.</p>
+<h3 id="support">support</h3>
+<p>Various information to get support about the project.</p>
+<p>Support information includes the following:</p>
+<ul>
+<li><strong>email:</strong> Email address for support.</li>
+<li><strong>issues:</strong> URL to the issue tracker.</li>
+<li><strong>forum:</strong> URL to the forum.</li>
+<li><strong>wiki:</strong> URL to the wiki.</li>
+<li><strong>irc:</strong> IRC channel for support, as irc://server/channel.</li>
+<li><strong>source:</strong> URL to browse or download the sources.</li>
+<li><strong>docs:</strong> URL to the documentation.</li>
+<li><strong>rss:</strong> URL to the RSS feed.</li>
+<li><strong>chat:</strong> URL to the chat channel.</li>
+</ul>
+<p>An example:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;support&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;email&quot;</span><span class="token operator">:</span> <span class="token string">&quot;support@example.org&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;irc&quot;</span><span class="token operator">:</span> <span class="token string">&quot;irc://irc.freenode.org/composer&quot;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Optional.</p>
+<h3 id="funding">funding</h3>
+<p>A list of URLs to provide funding to the package authors for maintenance and
+development of new functionality.</p>
+<p>Each entry consists of the following</p>
+<ul>
+<li><strong>type:</strong> The type of funding, or the platform through which funding can be provided, e.g. patreon, opencollective, tidelift or github.</li>
+<li><strong>url:</strong> URL to a website with details, and a way to fund the package.</li>
+</ul>
+<p>An example:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;funding&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;patreon&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://www.patreon.com/phpdoctrine&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tidelift&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://tidelift.com/subscription/pkg/packagist-doctrine_doctrine-bundle&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;other&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://www.doctrine-project.org/sponsorship.html&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Optional.</p>
+<h3 id="package-links">Package links</h3>
+<p>All of the following take an object which maps package names to
+versions of the package via version constraints. Read more about
+versions <a href="articles/versions.html">here</a>.</p>
+<p>Example:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;require&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;monolog/monolog&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1.0.*&quot;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>All links are optional fields.</p>
+<p><code>require</code> and <code>require-dev</code> additionally support <em>stability flags</em> (<a href="04-schema.html#root-package">root-only</a>).
+They take the form &quot;<em>constraint</em>@<em>stability flag</em>&quot;.
+These allow you to further restrict or expand the stability of a package beyond
+the scope of the <a href="#minimum-stability">minimum-stability</a> setting. You can apply
+them to a constraint, or apply them to an empty <em>constraint</em> if you want to
+allow unstable packages of a dependency for example.</p>
+<p>Example:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;require&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;monolog/monolog&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1.0.*@beta&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;acme/foo&quot;</span><span class="token operator">:</span> <span class="token string">&quot;@dev&quot;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>If one of your dependencies has a dependency on an unstable package you need to
+explicitly require it as well, along with its sufficient stability flag.</p>
+<p>Example:</p>
+<p>Assuming <code>doctrine/doctrine-fixtures-bundle</code> requires <code>&quot;doctrine/data-fixtures&quot;: &quot;dev-master&quot;</code>
+then inside the root composer.json you need to add the second line below to allow dev
+releases for the <code>doctrine/data-fixtures</code> package :</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;require&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;doctrine/doctrine-fixtures-bundle&quot;</span><span class="token operator">:</span> <span class="token string">&quot;dev-master&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;doctrine/data-fixtures&quot;</span><span class="token operator">:</span> <span class="token string">&quot;@dev&quot;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><code>require</code> and <code>require-dev</code> additionally support explicit references (i.e.
+commit) for dev versions to make sure they are locked to a given state, even
+when you run update. These only work if you explicitly require a dev version
+and append the reference with <code>#<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ref</span><span class="token punctuation">&gt;</span></span></code>. This is also a
+<a href="04-schema.html#root-package">root-only</a> feature and will be ignored in
+dependencies.</p>
+<p>Example:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;require&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;monolog/monolog&quot;</span><span class="token operator">:</span> <span class="token string">&quot;dev-master#2eb0c0978d290a1c45346a1955188929cb4e5db7&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;acme/foo&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1.0.x-dev#abc123&quot;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<blockquote>
+<p><strong>Note:</strong> This feature has severe technical limitations, as the
+composer.json metadata will still be read from the branch name you specify
+before the hash. You should therefore only use this as a temporary solution
+during development to remediate transient issues, until you can switch to
+tagged releases. The Composer team does not actively support this feature
+and will not accept bug reports related to it.</p>
+</blockquote>
+<p>It is also possible to inline-alias a package constraint so that it matches
+a constraint that it otherwise would not. For more information <a href="articles/aliases.html">see the
+aliases article</a>.</p>
+<p><code>require</code> and <code>require-dev</code> also support references to specific PHP versions
+and PHP extensions your project needs to run successfully.</p>
+<p>Example:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;require&quot;</span> <span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;php&quot;</span> <span class="token operator">:</span> <span class="token string">&quot;&gt;=7.4&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;ext-mbstring&quot;</span><span class="token operator">:</span> <span class="token string">&quot;*&quot;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<blockquote>
+<p><strong>Note:</strong> It is important to list PHP extensions your project requires.
+Not all PHP installations are created equal: some may miss extensions you
+may consider as standard (such as <code>ext-mysqli</code> which is not installed by
+default in Fedora/CentOS minimal installation systems). Failure to list
+required PHP extensions may lead to a bad user experience: Composer will
+install your package without any errors but it will then fail at run-time.
+The <code>composer show --platform</code> command lists all PHP extensions available on
+your system. You may use it to help you compile the list of extensions you
+use and require. Alternatively you may use third party tools to analyze
+your project for the list of extensions used.</p>
+</blockquote>
+<h4 id="require">require</h4>
+<p>Map of packages required by this package. The package will not be installed
+unless those requirements can be met.</p>
+<h4 id="require-dev-root-only">require-dev <span>(<a href="04-schema.html#root-package">root-only</a>)</span></h4>
+<p>Map of packages required for developing this package, or running
+tests, etc. The dev requirements of the root package are installed by default.
+Both <code>install</code> or <code>update</code> support the <code>--no-dev</code> option that prevents dev
+dependencies from being installed.</p>
+<h4 id="conflict">conflict</h4>
+<p>Map of packages that conflict with this version of this package. They
+will not be allowed to be installed together with your package.</p>
+<p>Note that when specifying ranges like <code>&lt;1.0 &gt;=1.1</code> in a <code>conflict</code> link,
+this will state a conflict with all versions that are less than 1.0 <em>and</em> equal
+or newer than 1.1 at the same time, which is probably not what you want. You
+probably want to go for <code>&lt;1.0 || &gt;=1.1</code> in this case.</p>
+<h4 id="replace">replace</h4>
+<p>Map of packages that are replaced by this package. This allows you to fork a
+package, publish it under a different name with its own version numbers, while
+packages requiring the original package continue to work with your fork because
+it replaces the original package.</p>
+<p>This is also useful for packages that contain sub-packages, for example the main
+symfony/symfony package contains all the Symfony Components which are also
+available as individual packages. If you require the main package it will
+automatically fulfill any requirement of one of the individual components,
+since it replaces them.</p>
+<p>Caution is advised when using replace for the sub-package purpose explained
+above. You should then typically only replace using <code>self.version</code> as a version
+constraint, to make sure the main package only replaces the sub-packages of
+that exact version, and not any other version, which would be incorrect.</p>
+<h4 id="provide">provide</h4>
+<p>Map of packages that are provided by this package. This is mostly
+useful for implementations of common interfaces. A package could depend on
+some virtual package e.g. <code>psr/logger-implementation</code>, any library that implements
+this logger interface would list it in <code>provide</code>. Implementors can then
+be <a href="https://packagist.org/providers/psr/log-implementation" target="_blank">found on Packagist.org</a>.</p>
+<p>Using <code>provide</code> with the name of an actual package rather than a virtual one
+implies that the code of that package is also shipped, in which case <code>replace</code>
+is generally a better choice. A common convention for packages providing an
+interface and relying on other packages to provide an implementation (for
+instance the PSR interfaces) is to use a <code>-implementation</code> suffix for the
+name of the virtual package corresponding to the interface package.</p>
+<h4 id="suggest">suggest</h4>
+<p>Suggested packages that can enhance or work well with this package. These are
+informational and are displayed after the package is installed, to give
+your users a hint that they could add more packages, even though they are not
+strictly required.</p>
+<p>The format is like package links above, except that the values are free text
+and not version constraints.</p>
+<p>Example:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;suggest&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;monolog/monolog&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Allows more advanced logging of the application flow&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;ext-xml&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Needed to support XML format in class Foo&quot;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="autoload">autoload</h3>
+<p>Autoload mapping for a PHP autoloader.</p>
+<p><a href="https://www.php-fig.org/psr/psr-4/" target="_blank"><code>PSR-4</code></a> and <a href="http://www.php-fig.org/psr/psr-0/" target="_blank"><code>PSR-0</code></a>
+autoloading, <code>classmap</code> generation and <code>files</code> includes are supported.</p>
+<p>PSR-4 is the recommended way since it offers greater ease of use (no need
+to regenerate the autoloader when you add classes).</p>
+<h4 id="psr-4">PSR-4</h4>
+<p>Under the <code>psr-4</code> key you define a mapping from namespaces to paths, relative to the
+package root. When autoloading a class like <code>Foo\\Bar\\Baz</code> a namespace prefix
+<code>Foo\\</code> pointing to a directory <code>src/</code> means that the autoloader will look for a
+file named <code>src/Bar/Baz.php</code> and include it if present. Note that as opposed to
+the older PSR-0 style, the prefix (<code>Foo\\</code>) is <strong>not</strong> present in the file path.</p>
+<p>Namespace prefixes must end in <code>\\</code> to avoid conflicts between similar prefixes.
+For example <code>Foo</code> would match classes in the <code>FooBar</code> namespace so the trailing
+backslashes solve the problem: <code>Foo\\</code> and <code>FooBar\\</code> are distinct.</p>
+<p>The PSR-4 references are all combined, during install/update, into a single
+key =&gt; value array which may be found in the generated file
+<code>vendor/composer/autoload_psr4.php</code>.</p>
+<p>Example:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;autoload&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;psr-4&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;Monolog\\&quot;</span><span class="token operator">:</span> <span class="token string">&quot;src/&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Vendor\\Namespace\\&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>If you need to search for a same prefix in multiple directories,
+you can specify them as an array as such:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;autoload&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;psr-4&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">&quot;Monolog\\&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;src/&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;lib/&quot;</span><span class="token punctuation">]</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>If you want to have a fallback directory where any namespace will be looked for,
+you can use an empty prefix like:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;autoload&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;psr-4&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">&quot;&quot;</span><span class="token operator">:</span> <span class="token string">&quot;src/&quot;</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="psr-0">PSR-0</h4>
+<p>Under the <code>psr-0</code> key you define a mapping from namespaces to paths, relative to the
+package root. Note that this also supports the PEAR-style non-namespaced convention.</p>
+<p>Please note namespace declarations should end in <code>\\</code> to make sure the autoloader
+responds exactly. For example <code>Foo</code> would match in <code>FooBar</code> so the trailing
+backslashes solve the problem: <code>Foo\\</code> and <code>FooBar\\</code> are distinct.</p>
+<p>The PSR-0 references are all combined, during install/update, into a single key =&gt; value
+array which may be found in the generated file <code>vendor/composer/autoload_namespaces.php</code>.</p>
+<p>Example:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;autoload&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;psr-0&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;Monolog\\&quot;</span><span class="token operator">:</span> <span class="token string">&quot;src/&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Vendor\\Namespace\\&quot;</span><span class="token operator">:</span> <span class="token string">&quot;src/&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;Vendor_Namespace_&quot;</span><span class="token operator">:</span> <span class="token string">&quot;src/&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>If you need to search for a same prefix in multiple directories,
+you can specify them as an array as such:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;autoload&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;psr-0&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">&quot;Monolog\\&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;src/&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;lib/&quot;</span><span class="token punctuation">]</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>The PSR-0 style is not limited to namespace declarations only but may be
+specified right down to the class level. This can be useful for libraries with
+only one class in the global namespace. If the php source file is also located
+in the root of the package, for example, it may be declared like this:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;autoload&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;psr-0&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">&quot;UniqueGlobalClass&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>If you want to have a fallback directory where any namespace can be, you can
+use an empty prefix like:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;autoload&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;psr-0&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">&quot;&quot;</span><span class="token operator">:</span> <span class="token string">&quot;src/&quot;</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="classmap">Classmap</h4>
+<p>The <code>classmap</code> references are all combined, during install/update, into a single
+key =&gt; value array which may be found in the generated file
+<code>vendor/composer/autoload_classmap.php</code>. This map is built by scanning for
+classes in all <code>.php</code> and <code>.inc</code> files in the given directories/files.</p>
+<p>You can use the classmap generation support to define autoloading for all libraries
+that do not follow PSR-0/4. To configure this you specify all directories or files
+to search for classes.</p>
+<p>Example:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;autoload&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;classmap&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;src/&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;lib/&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Something.php&quot;</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Wildcards (<code>*</code>) are also supported in a classmap paths, and expand to match any directory name:</p>
+<p>Example:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;autoload&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;classmap&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;src/addons/*/lib/&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;3rd-party/*&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Something.php&quot;</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="files">Files</h4>
+<p>If you want to require certain files explicitly on every request then you can use
+the <code>files</code> autoloading mechanism. This is useful if your package includes PHP functions
+that cannot be autoloaded by PHP.</p>
+<p>Example:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;autoload&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;files&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;src/MyLibrary/functions.php&quot;</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="exclude-files-from-classmaps">Exclude files from classmaps</h4>
+<p>If you want to exclude some files or folders from the classmap you can use the <code>exclude-from-classmap</code> property.
+This might be useful to exclude test classes in your live environment, for example, as those will be skipped
+from the classmap even when building an optimized autoloader.</p>
+<p>The classmap generator will ignore all files in the paths configured here. The paths are absolute from the package
+root directory (i.e. composer.json location), and support <code>*</code> to match anything but a slash, and <code>**</code> to
+match anything. <code>**</code> is implicitly added to the end of the paths.</p>
+<p>Example:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;autoload&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;exclude-from-classmap&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;/Tests/&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;/test/&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;/tests/&quot;</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="optimizing-the-autoloader">Optimizing the autoloader</h4>
+<p>The autoloader can have quite a substantial impact on your request time
+(50-100ms per request in large frameworks using a lot of classes). See the
+<a href="articles/autoloader-optimization.html">article about optimizing the autoloader</a>
+for more details on how to reduce this impact.</p>
+<h3 id="autoload-dev-root-only">autoload-dev <span>(<a href="04-schema.html#root-package">root-only</a>)</span></h3>
+<p>This section allows to define autoload rules for development purposes.</p>
+<p>Classes needed to run the test suite should not be included in the main autoload
+rules to avoid polluting the autoloader in production and when other people use
+your package as a dependency.</p>
+<p>Therefore, it is a good idea to rely on a dedicated path for your unit tests
+and to add it within the autoload-dev section.</p>
+<p>Example:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;autoload&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;psr-4&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">&quot;MyLibrary\\&quot;</span><span class="token operator">:</span> <span class="token string">&quot;src/&quot;</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;autoload-dev&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;psr-4&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">&quot;MyLibrary\\Tests\\&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tests/&quot;</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="include-path">include-path</h3>
+<blockquote>
+<p><strong>DEPRECATED</strong>: This is only present to support legacy projects, and all new code
+should preferably use autoloading. As such it is a deprecated practice, but the
+feature itself will not likely disappear from Composer.</p>
+</blockquote>
+<p>A list of paths which should get appended to PHP&apos;s <code>include_path</code>.</p>
+<p>Example:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;include-path&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;lib/&quot;</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Optional.</p>
+<h3 id="target-dir">target-dir</h3>
+<blockquote>
+<p><strong>DEPRECATED</strong>: This is only present to support legacy PSR-0 style autoloading,
+and all new code should preferably use PSR-4 without target-dir and projects
+using PSR-0 with PHP namespaces are encouraged to migrate to PSR-4 instead.</p>
+</blockquote>
+<p>Defines the installation target.</p>
+<p>In case the package root is below the namespace declaration you cannot
+autoload properly. <code>target-dir</code> solves this problem.</p>
+<p>An example is Symfony. There are individual packages for the components. The
+Yaml component is under <code>Symfony\Component\Yaml</code>. The package root is that
+<code>Yaml</code> directory. To make autoloading possible, we need to make sure that it
+is not installed into <code>vendor/symfony/yaml</code>, but instead into
+<code>vendor/symfony/yaml/Symfony/Component/Yaml</code>, so that the autoloader can load
+it from <code>vendor/symfony/yaml</code>.</p>
+<p>To do that, <code>autoload</code> and <code>target-dir</code> are defined as follows:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;autoload&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;psr-0&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">&quot;Symfony\\Component\\Yaml\\&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;target-dir&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Symfony/Component/Yaml&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Optional.</p>
+<h3 id="minimum-stability-root-only">minimum-stability <span>(<a href="04-schema.html#root-package">root-only</a>)</span></h3>
+<p>This defines the default behavior for filtering packages by stability. This
+defaults to <code>stable</code>, so if you rely on a <code>dev</code> package, you should specify
+it in your file to avoid surprises.</p>
+<p>All versions of each package are checked for stability, and those that are less
+stable than the <code>minimum-stability</code> setting will be ignored when resolving
+your project dependencies. (Note that you can also specify stability requirements
+on a per-package basis using stability flags in the version constraints that you
+specify in a <code>require</code> block (see <a href="#package-links">package links</a> for more details).</p>
+<p>Available options (in order of stability) are <code>dev</code>, <code>alpha</code>, <code>beta</code>, <code>RC</code>,
+and <code>stable</code>.</p>
+<h3 id="prefer-stable-root-only">prefer-stable <span>(<a href="04-schema.html#root-package">root-only</a>)</span></h3>
+<p>When this is enabled, Composer will prefer more stable packages over unstable
+ones when finding compatible stable packages is possible. If you require a
+dev version or only alphas are available for a package, those will still be
+selected granted that the minimum-stability allows for it.</p>
+<p>Use <code>&quot;prefer-stable&quot;: true</code> to enable.</p>
+<h3 id="repositories-root-only">repositories <span>(<a href="04-schema.html#root-package">root-only</a>)</span></h3>
+<p>Custom package repositories to use.</p>
+<p>By default Composer only uses the packagist repository. By specifying
+repositories you can get packages from elsewhere.</p>
+<p>Repositories are not resolved recursively. You can only add them to your main
+<code>composer.json</code>. Repository declarations of dependencies&apos; <code>composer.json</code>s are
+ignored.</p>
+<p>The following repository types are supported:</p>
+<ul>
+<li><strong>composer:</strong> A Composer repository is a <code>packages.json</code> file served
+via the network (HTTP, FTP, SSH), that contains a list of <code>composer.json</code>
+objects with additional <code>dist</code> and/or <code>source</code> information. The <code>packages.json</code>
+file is loaded using a PHP stream. You can set extra options on that stream
+using the <code>options</code> parameter.</li>
+<li><strong>vcs:</strong> The version control system repository can fetch packages from git,
+svn, fossil and hg repositories.</li>
+<li><strong>package:</strong> If you depend on a project that does not have any support for
+composer whatsoever you can define the package inline using a <code>package</code>
+repository. You basically inline the <code>composer.json</code> object.</li>
+</ul>
+<p>For more information on any of these, see <a href="05-repositories.html">Repositories</a>.</p>
+<p>Example:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;repositories&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;composer&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://packages.example.com&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;composer&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://packages.example.com&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;options&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token property">&quot;ssl&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;verify_peer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;true&quot;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vcs&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://github.com/Seldaek/monolog&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;package&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;package&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;smarty/smarty&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;3.1.7&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;dist&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://www.smarty.net/files/Smarty-3.1.7.zip&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;zip&quot;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;source&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://smarty-php.googlecode.com/svn/&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;svn&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;reference&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tags/Smarty_3_1_7/distribution/&quot;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<blockquote>
+<p><strong>Note:</strong> Order is significant here. When looking for a package, Composer
+will look from the first to the last repository, and pick the first match.
+By default Packagist is added last which means that custom repositories can
+override packages from it.</p>
+</blockquote>
+<p>Using JSON object notation is also possible. However, JSON key/value pairs
+are to be considered unordered so consistent behaviour cannot be guaranteed.</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;repositories&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+         <span class="token property">&quot;foo&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+             <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;composer&quot;</span><span class="token punctuation">,</span>
+             <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://packages.foo.com&quot;</span>
+         <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="config-root-only">config <span>(<a href="04-schema.html#root-package">root-only</a>)</span></h3>
+<p>A set of configuration options. It is only used for projects. See
+<a href="06-config.html">Config</a> for a description of each individual option.</p>
+<h3 id="scripts-root-only">scripts <span>(<a href="04-schema.html#root-package">root-only</a>)</span></h3>
+<p>Composer allows you to hook into various parts of the installation process
+through the use of scripts.</p>
+<p>See <a href="articles/scripts.html">Scripts</a> for events details and examples.</p>
+<h3 id="extra">extra</h3>
+<p>Arbitrary extra data for consumption by <code>scripts</code>.</p>
+<p>This can be virtually anything. To access it from within a script event
+handler, you can do:</p>
+<pre class="language-"><code class="lang-php"><span class="token variable">$extra</span> <span class="token operator">=</span> <span class="token variable">$event</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">getComposer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">getPackage</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">getExtra</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Optional.</p>
+<h3 id="bin">bin</h3>
+<p>A set of files that should be treated as binaries and symlinked into the <code>bin-dir</code>
+(from config).</p>
+<p>See <a href="articles/vendor-binaries.html">Vendor Binaries</a> for more details.</p>
+<p>Optional.</p>
+<h3 id="archive">archive</h3>
+<p>A set of options for creating package archives.</p>
+<p>The following options are supported:</p>
+<ul>
+<li><strong>name:</strong> Allows configuring base name for archive.
+By default (if not configured, and <code>--file</code> is not passed as command-line argument),
+<code>preg_replace(&apos;#[^a-z0-9-_]#i&apos;, &apos;-&apos;, name)</code> is used.</li>
+</ul>
+<p>Example:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;org/strangeName&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;archive&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Strange_name&quot;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<ul>
+<li><strong>exclude:</strong> Allows configuring a list of patterns for excluded paths. The
+pattern syntax matches .gitignore files. A leading exclamation mark (!) will
+result in any matching files to be included even if a previous pattern
+excluded them. A leading slash will only match at the beginning of the project
+relative path. An asterisk will not expand to a directory separator.</li>
+</ul>
+<p>Example:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;archive&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;exclude&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;/foo/bar&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;baz&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;/*.test&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;!/foo/bar/baz&quot;</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>The example will include <code>/dir/foo/bar/file</code>, <code>/foo/bar/baz</code>, <code>/file.php</code>,
+<code>/foo/my.test</code> but it will exclude <code>/foo/bar/any</code>, <code>/foo/baz</code>, and <code>/my.test</code>.</p>
+<p>Optional.</p>
+<h3 id="abandoned">abandoned</h3>
+<p>Indicates whether this package has been abandoned.</p>
+<p>It can be boolean or a package name/URL pointing to a recommended alternative.</p>
+<p>Examples:</p>
+<p>Use <code>&quot;abandoned&quot;: true</code> to indicates this package is abandoned.
+Use <code>&quot;abandoned&quot;: &quot;monolog/monolog&quot;</code> to indicates this package is abandoned, and the
+recommended alternative is  <code>monolog/monolog</code>.</p>
+<p>Defaults to false.</p>
+<p>Optional.</p>
+<h3 id="non-feature-branches">non-feature-branches</h3>
+<p>A list of regex patterns of branch names that are non-numeric (e.g. &quot;latest&quot; or something),
+that will NOT be handled as feature branches. This is an array of strings.</p>
+<p>If you have non-numeric branch names, for example like &quot;latest&quot;, &quot;current&quot;, &quot;latest-stable&quot;
+or something, that do not look like a version number, then Composer handles such branches
+as feature branches. This means it searches for parent branches, that look like a version
+or ends at special branches (like master), and the root package version number becomes the
+version of the parent branch or at least master or something.</p>
+<p>To handle non-numeric named branches as versions instead of searching for a parent branch
+with a valid version or special branch name like master, you can set patterns for branch
+names, that should be handled as dev version branches.</p>
+<p>This is really helpful when you have dependencies using &quot;self.version&quot;, so that not dev-master,
+but the same branch is installed (in the example: latest-testing).</p>
+<p>An example:</p>
+<p>If you have a testing branch, that is heavily maintained during a testing phase and is
+deployed to your staging environment, normally <code>composer show -s</code> will give you <code>versions : * dev-master</code>.</p>
+<p>If you configure <code>latest-.*</code> as a pattern for non-feature-branches like this:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;non-feature-branches&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;latest-.*&quot;</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Then <code>composer show -s</code> will give you <code>versions : * dev-latest-testing</code>.</p>
+<p>Optional.</p>
+<p>&#x2190; <a href="03-cli.html">Command-line interface</a>  |  <a href="05-repositories.html">Repositories</a> &#x2192;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="03-cli.html" class="navigation navigation-prev " aria-label="Previous page: 03 Cli">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="05-repositories.html" class="navigation navigation-next " aria-label="Next page: 05 Repositories">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"04 Schema","level":"1.9","depth":1,"next":{"title":"05 Repositories","level":"1.10","depth":1,"path":"05-repositories.md","ref":"05-repositories.md","articles":[]},"previous":{"title":"03 Cli","level":"1.8","depth":1,"path":"03-cli.md","ref":"03-cli.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-highlight","-livereload","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Composer 英文文档","language":"us-en","links":{"sidebar":{"Home":"https://docs.khs1994.com"}},"gitbook":"*"},"file":{"path":"04-schema.md","mtime":"2021-02-26T00:11:44.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-26T00:12:20.506Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

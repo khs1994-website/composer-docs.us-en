@@ -1,0 +1,769 @@
+
+<!DOCTYPE HTML>
+<html lang="us-en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Autoloader Optimization · Composer 英文文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="custom-installers.html" />
+    
+    
+    <link rel="prev" href="authentication-for-private-packages.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://docs.khs1994.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Articles
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="aliases.html">
+            
+                <a href="aliases.html">
+            
+                    
+                    Aliases
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="authentication-for-private-packages.html">
+            
+                <a href="authentication-for-private-packages.html">
+            
+                    
+                    Authentication For Private Packages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3" data-path="autoloader-optimization.html">
+            
+                <a href="autoloader-optimization.html">
+            
+                    
+                    Autoloader Optimization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="custom-installers.html">
+            
+                <a href="custom-installers.html">
+            
+                    
+                    Custom Installers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="handling-private-packages.html">
+            
+                <a href="handling-private-packages.html">
+            
+                    
+                    Handling Private Packages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="plugins.html">
+            
+                <a href="plugins.html">
+            
+                    
+                    Plugins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="repository-priorities.html">
+            
+                <a href="repository-priorities.html">
+            
+                    
+                    Repository Priorities
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="resolving-merge-conflicts.html">
+            
+                <a href="resolving-merge-conflicts.html">
+            
+                    
+                    Resolving Merge Conflicts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="scripts.html">
+            
+                <a href="scripts.html">
+            
+                    
+                    Scripts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="troubleshooting.html">
+            
+                <a href="troubleshooting.html">
+            
+                    
+                    Troubleshooting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="vendor-binaries.html">
+            
+                <a href="vendor-binaries.html">
+            
+                    
+                    Vendor Binaries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="versions.html">
+            
+                <a href="versions.html">
+            
+                    
+                    Versions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Dev
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../dev/DefaultPolicy.html">
+            
+                <a href="../dev/DefaultPolicy.html">
+            
+                    
+                    Default Policy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Faqs
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../faqs/how-do-i-install-a-package-to-a-custom-path-for-my-framework.html">
+            
+                <a href="../faqs/how-do-i-install-a-package-to-a-custom-path-for-my-framework.html">
+            
+                    
+                    How Do I Install A Package To A Custom Path For My Framework
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../faqs/how-to-install-composer-programmatically.html">
+            
+                <a href="../faqs/how-to-install-composer-programmatically.html">
+            
+                    
+                    How To Install Composer Programmatically
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../faqs/how-to-install-untrusted-packages-safely.html">
+            
+                <a href="../faqs/how-to-install-untrusted-packages-safely.html">
+            
+                    
+                    How To Install Untrusted Packages Safely
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../faqs/should-i-commit-the-dependencies-in-my-vendor-directory.html">
+            
+                <a href="../faqs/should-i-commit-the-dependencies-in-my-vendor-directory.html">
+            
+                    
+                    Should I Commit The Dependencies In My Vendor Directory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../faqs/which-version-numbering-system-does-composer-itself-use.html">
+            
+                <a href="../faqs/which-version-numbering-system-does-composer-itself-use.html">
+            
+                    
+                    Which Version Numbering System Does Composer Itself Use
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../faqs/why-are-unbound-version-constraints-a-bad-idea.html">
+            
+                <a href="../faqs/why-are-unbound-version-constraints-a-bad-idea.html">
+            
+                    
+                    Why Are Unbound Version Constraints A Bad Idea
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../faqs/why-are-version-constraints-combining-comparisons-and-wildcards-a-bad-idea.html">
+            
+                <a href="../faqs/why-are-version-constraints-combining-comparisons-and-wildcards-a-bad-idea.html">
+            
+                    
+                    Why Are Version Constraints Combining Comparisons And Wildcards A Bad Idea
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../faqs/why-can't-composer-load-repositories-recursively.html">
+            
+                <a href="../faqs/why-can't-composer-load-repositories-recursively.html">
+            
+                    
+                    Why Can T Composer Load Repositories Recursively
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../fixtures/fixtures.html">
+            
+                <a href="../fixtures/fixtures.html">
+            
+                    
+                    Fixtures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../01-basic-usage.html">
+            
+                <a href="../01-basic-usage.html">
+            
+                    
+                    01 Basic Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../02-libraries.html">
+            
+                <a href="../02-libraries.html">
+            
+                    
+                    02 Libraries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../03-cli.html">
+            
+                <a href="../03-cli.html">
+            
+                    
+                    03 Cli
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../04-schema.html">
+            
+                <a href="../04-schema.html">
+            
+                    
+                    04 Schema
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../05-repositories.html">
+            
+                <a href="../05-repositories.html">
+            
+                    
+                    05 Repositories
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../06-config.html">
+            
+                <a href="../06-config.html">
+            
+                    
+                    06 Config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../07-runtime.html">
+            
+                <a href="../07-runtime.html">
+            
+                    
+                    07 Runtime
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../08-community.html">
+            
+                <a href="../08-community.html">
+            
+                    
+                    08 Community
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Autoloader Optimization</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <!--
+    tagline: How to reduce the performance impact of the autoloader
+-->
+<h1 id="autoloader-optimization">Autoloader optimization</h1>
+<p>By default, the Composer autoloader runs relatively fast. However, due to the way
+PSR-4 and PSR-0 autoloading rules are set up, it needs to check the filesystem
+before resolving a classname conclusively. This slows things down quite a bit,
+but it is convenient in development environments because when you add a new class
+it can immediately be discovered/used without having to rebuild the autoloader
+configuration.</p>
+<p>The problem however is in production you generally want things to happen as fast
+as possible, as you can rebuild the configuration every time you deploy and
+new classes do not appear at random between deploys.</p>
+<p>For this reason, Composer offers a few strategies to optimize the autoloader.</p>
+<blockquote>
+<p><strong>Note:</strong> You <strong>should not</strong> enable any of these optimizations in <strong>development</strong> as
+they all will cause various problems when adding/removing classes. The performance
+gains are not worth the trouble in a development setting.</p>
+</blockquote>
+<h2 id="optimization-level-1-class-map-generation">Optimization Level 1: Class map generation</h2>
+<h3 id="how-to-run-it">How to run it?</h3>
+<p>There are a few options to enable this:</p>
+<ul>
+<li>Set <code>&quot;optimize-autoloader&quot;: true</code> inside the config key of composer.json</li>
+<li>Call <code>install</code> or <code>update</code> with <code>-o</code> / <code>--optimize-autoloader</code></li>
+<li>Call <code>dump-autoload</code> with <code>-o</code> / <code>--optimize</code></li>
+</ul>
+<h3 id="what-does-it-do">What does it do?</h3>
+<p>Class map generation essentially converts PSR-4/PSR-0 rules into classmap rules.
+This makes everything quite a bit faster as for known classes the class map
+returns instantly the path, and Composer can guarantee the class is in there so
+there is no filesystem check needed.</p>
+<p>On PHP 5.6+, the class map is also cached in opcache which improves the initialization
+time greatly. If you make sure opcache is enabled, then the class map should load
+almost instantly and then class loading is fast.</p>
+<h3 id="trade-offs">Trade-offs</h3>
+<p>There are no real trade-offs with this method. It should always be enabled in
+production.</p>
+<p>The only issue is it does not keep track of autoload misses (i.e. when
+it cannot find a given class), so those fallback to PSR-4 rules and can still
+result in slow filesystem checks. To solve this issue two Level 2 optimization
+options exist, and you can decide to enable either if you have a lot of
+class_exists checks that are done for classes that do not exist in your project.</p>
+<h2 id="optimization-level-2a-authoritative-class-maps">Optimization Level 2/A: Authoritative class maps</h2>
+<h3 id="how-to-run-it">How to run it?</h3>
+<p>There are a few options to enable this:</p>
+<ul>
+<li>Set <code>&quot;classmap-authoritative&quot;: true</code> inside the config key of composer.json</li>
+<li>Call <code>install</code> or <code>update</code> with <code>-a</code> / <code>--classmap-authoritative</code></li>
+<li>Call <code>dump-autoload</code> with <code>-a</code> / <code>--classmap-authoritative</code></li>
+</ul>
+<h3 id="what-does-it-do">What does it do?</h3>
+<p>Enabling this automatically enables Level 1 class map optimizations.</p>
+<p>This option says that if something is not found in the classmap,
+then it does not exist and the autoloader should not attempt to look on the
+filesystem according to PSR-4 rules.</p>
+<h3 id="trade-offs">Trade-offs</h3>
+<p>This option makes the autoloader always return very quickly. On the flipside it
+also means that in case a class is generated at runtime for some reason, it will
+not be allowed to be autoloaded. If your project or any of your dependencies does that
+then you might experience &quot;class not found&quot; issues in production. Enable this with care.</p>
+<blockquote>
+<p>Note: This cannot be combined with Level 2/B optimizations. You have to choose one as
+they address the same issue in different ways.</p>
+</blockquote>
+<h2 id="optimization-level-2b-apcu-cache">Optimization Level 2/B: APCu cache</h2>
+<h3 id="how-to-run-it">How to run it?</h3>
+<p>There are a few options to enable this:</p>
+<ul>
+<li>Set <code>&quot;apcu-autoloader&quot;: true</code> inside the config key of composer.json</li>
+<li>Call <code>install</code> or <code>update</code> with <code>--apcu-autoloader</code></li>
+<li>Call <code>dump-autoload</code> with <code>--apcu</code></li>
+</ul>
+<h3 id="what-does-it-do">What does it do?</h3>
+<p>This option adds an APCu cache as a fallback for the class map. It will not
+automatically generate the class map though, so you should still enable Level 1
+optimizations manually if you so desire.</p>
+<p>Whether a class is found or not, that fact is always cached in APCu, so it can be
+returned quickly on the next request.</p>
+<h3 id="trade-offs">Trade-offs</h3>
+<p>This option requires APCu which may or may not be available to you. It also
+uses APCu memory for autoloading purposes, but it is safe to use and cannot
+result in classes not being found like the authoritative class map
+optimization above.</p>
+<blockquote>
+<p>Note: This cannot be combined with Level 2/A optimizations. You have to choose one as
+they address the same issue in different ways.</p>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="authentication-for-private-packages.html" class="navigation navigation-prev " aria-label="Previous page: Authentication For Private Packages">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="custom-installers.html" class="navigation navigation-next " aria-label="Next page: Custom Installers">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Autoloader Optimization","level":"1.2.3","depth":2,"next":{"title":"Custom Installers","level":"1.2.4","depth":2,"path":"articles/custom-installers.md","ref":"articles/custom-installers.md","articles":[]},"previous":{"title":"Authentication For Private Packages","level":"1.2.2","depth":2,"path":"articles/authentication-for-private-packages.md","ref":"articles/authentication-for-private-packages.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-highlight","-livereload","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Composer 英文文档","language":"us-en","links":{"sidebar":{"Home":"https://docs.khs1994.com"}},"gitbook":"*"},"file":{"path":"articles/autoloader-optimization.md","mtime":"2021-02-26T00:11:44.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-26T00:12:20.506Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
